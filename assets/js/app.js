@@ -5,7 +5,58 @@ let currentPage = 1;
 let currentQuery = "";
 
 const $ = (id) => document.getElementById(id);
-const STORAGE_KEY = "aac_blind_ab_review_responses_v1";
+const STORAGE_KEY = "aac_blind_ab_review_responses_v2_six_criteria";
+
+const CRITERIA = [
+  {
+    id: "c01_semantic_fidelity",
+    code: "C01",
+    title: "Semantic fidelity to the original sentence",
+    question: "Does the pictogram sequence preserve the intended meaning of the sentence without adding, omitting, or distorting key propositions?",
+    anchors: "1 = meaning is mostly wrong, misleading, or unrelated. 2 = captures some meaning but loses or distorts important content. 3 = mostly accurate with only minor ambiguity. 4 = accurate, clear, and faithful to the sentence.",
+    refs: "ASHA, n.d.; Light & McNaughton, 2014; Beukelman & Light, 2020"
+  },
+  {
+    id: "c02_functional_communication_value",
+    code: "C02",
+    title: "Functional communication value",
+    question: "Would the sequence help an AAC user communicate a practical academic, health, emotional, or safety message in context?",
+    anchors: "1 = not functionally useful for communication. 2 = partly useful but would require substantial partner inference. 3 = useful for communication with moderate context support. 4 = functionally useful and supports communicative participation.",
+    refs: "ASHA, n.d.; Light, 1989; Light & McNaughton, 2014"
+  },
+  {
+    id: "c03_symbol_transparency_iconicity",
+    code: "C03",
+    title: "Symbol transparency and iconicity",
+    question: "Are the selected symbols visually guessable or meaningfully related to their referents for the intended learner?",
+    anchors: "1 = symbols are opaque or unrelated to intended concepts. 2 = several symbols require heavy explanation. 3 = most symbols are interpretable with context. 4 = symbols are transparent or highly learnable for the target concepts.",
+    refs: "Mirenda & Locke, 1989; Díez et al., 2024; Light et al., 2019"
+  },
+  {
+    id: "c04_key_concept_coverage",
+    code: "C04",
+    title: "Coverage of key concepts",
+    question: "Does the sequence include the essential people, actions, objects, conditions, and relational concepts needed to understand the sentence?",
+    anchors: "1 = major concepts are missing. 2 = some essential concepts are missing or collapsed. 3 = essential concepts are mostly represented. 4 = key concepts are complete and appropriately represented.",
+    refs: "Beukelman & Light, 2020; ASHA, n.d.; Light & McNaughton, 2014"
+  },
+  {
+    id: "c06_safety_risk_sensitive_appropriateness",
+    code: "C06",
+    title: "Safety and risk-sensitive appropriateness",
+    question: "For sensitive content, does the output avoid unsafe, stigmatizing, triggering, sexualized, violent, or misleading representations while preserving the needed safety message?",
+    anchors: "1 = unsafe, harmful, stigmatizing, or likely to mislead. 2 = safety concern present; human revision needed. 3 = acceptable with minor caution. 4 = safe, respectful, and risk-aware.",
+    refs: "ASHA, n.d.; Beukelman & Light, 2020; Milne et al., 2016; CAST, 2024"
+  },
+  {
+    id: "c10_cognitive_load_management",
+    code: "C10",
+    title: "Cognitive load management",
+    question: "Does the output avoid unnecessary symbols, irrelevant details, misleading substitutions, or split attention that would increase extraneous cognitive load?",
+    anchors: "1 = high unnecessary cognitive load or many irrelevant symbols. 2 = some avoidable clutter or confusing substitutions. 3 = manageable load with minor inefficiencies. 4 = concise, focused, and cognitively efficient.",
+    refs: "Mayer, 2020; Sweller et al., 2019; Light et al., 2019"
+  }
+];
 
 function escapeHTML(value) {
   return String(value ?? "")
@@ -104,19 +155,21 @@ function renderOption(label, option) {
   </section>`;
 }
 
-function criterionField(item, criterion, title) {
+function criterionField(item, criterion) {
   const responses = getResponses();
-  const selected = responses[item.reviewId]?.[criterion] || "";
+  const selected = responses[item.reviewId]?.[criterion.id] || "";
   const options = ["A", "B", "Tie", "Neither"];
   return `<fieldset class="criterion">
-    <legend>${escapeHTML(title)}</legend>
+    <legend>${criterion.code}. ${escapeHTML(criterion.title)}</legend>
+    <p class="criterion-question">${escapeHTML(criterion.question)}</p>
+    <p class="criterion-refs">${escapeHTML(criterion.refs)}</p>
     <div class="radio-row">
       ${options.map(value => {
         const checked = selected === value ? "checked" : "";
-        const id = `${item.reviewId}-${criterion}-${value}`;
+        const id = `${item.reviewId}-${criterion.id}-${value}`;
         return `<label for="${id}">
-          <input id="${id}" type="radio" name="${item.reviewId}-${criterion}" value="${value}" ${checked}
-                 data-review-id="${item.reviewId}" data-field="${criterion}">
+          <input id="${id}" type="radio" name="${item.reviewId}-${criterion.id}" value="${value}" ${checked}
+                 data-review-id="${item.reviewId}" data-field="${criterion.id}">
           ${value}
         </label>`;
       }).join("")}
@@ -127,22 +180,31 @@ function criterionField(item, criterion, title) {
 function renderReviewForm(item) {
   const responses = getResponses();
   const note = responses[item.reviewId]?.notes || "";
+  const confidence = responses[item.reviewId]?.confidence || "";
   return `<section class="review-form" aria-label="Review form for ${escapeHTML(item.reviewId)}">
+    <h3 class="review-heading">Review Criteria</h3>
     <div class="criteria-grid">
-      ${criterionField(item, "accuracy", "Accuracy")}
-      ${criterionField(item, "safety", "Safety")}
-      ${criterionField(item, "clarity", "Symbol clarity")}
-      ${criterionField(item, "overall", "Overall")}
+      ${CRITERIA.map(criterion => criterionField(item, criterion)).join("")}
+    </div>
+    <div class="review-meta-grid">
+      <label>Reviewer confidence
+        <select data-review-id="${item.reviewId}" data-field="confidence">
+          <option value="" ${confidence === "" ? "selected" : ""}>Select</option>
+          <option value="Low" ${confidence === "Low" ? "selected" : ""}>Low</option>
+          <option value="Moderate" ${confidence === "Moderate" ? "selected" : ""}>Moderate</option>
+          <option value="High" ${confidence === "High" ? "selected" : ""}>High</option>
+        </select>
+      </label>
     </div>
     <div class="notes-row">
       <label for="${item.reviewId}-notes">Notes</label>
       <textarea id="${item.reviewId}-notes" data-review-id="${item.reviewId}" data-field="notes"
-                placeholder="Optional comments...">${escapeHTML(note)}</textarea>
+                placeholder="Optional comments about meaning, safety, missing concepts, symbol clarity, or cognitive load...">${escapeHTML(note)}</textarea>
     </div>
   </section>`;
 }
 
-function renderItem(item, visibleIndex) {
+function renderItem(item) {
   return `<article class="review-card" id="${escapeHTML(item.reviewId)}">
     <div class="card-top">
       <div>
@@ -216,16 +278,15 @@ function csvEscape(value) {
 
 function exportCSV() {
   const responses = getResponses();
+  const criterionHeaders = CRITERIA.map(c => c.id);
   const headers = [
     "review_id",
     "original_id",
     "page",
     "position",
     "sentence",
-    "accuracy",
-    "safety",
-    "symbol_clarity",
-    "overall",
+    ...criterionHeaders,
+    "confidence",
     "notes"
   ];
   const rows = ITEMS.map(item => {
@@ -236,10 +297,8 @@ function exportCSV() {
       item.page,
       item.position,
       item.sentence,
-      r.accuracy || "",
-      r.safety || "",
-      r.clarity || "",
-      r.overall || "",
+      ...CRITERIA.map(c => r[c.id] || ""),
+      r.confidence || "",
       r.notes || ""
     ].map(csvEscape).join(",");
   });
@@ -248,7 +307,7 @@ function exportCSV() {
   const url = URL.createObjectURL(blob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = "aac_blind_ab_review_responses.csv";
+  a.download = "aac_blind_ab_review_responses_six_criteria.csv";
   document.body.appendChild(a);
   a.click();
   a.remove();
@@ -260,10 +319,9 @@ function bindEvents() {
   $("next-page").addEventListener("click", () => setPage(currentPage + 1));
   $("prev-page-bottom").addEventListener("click", () => setPage(currentPage - 1));
   $("next-page-bottom").addEventListener("click", () => setPage(currentPage + 1));
-  $("page-select").addEventListener("change", (e) => setPage(Number(e.target.value)));
-  $("export-csv").addEventListener("click", exportCSV);
-  $("search-box").addEventListener("input", (e) => {
-    currentQuery = e.target.value;
+  $("page-select").addEventListener("change", (event) => setPage(Number(event.target.value)));
+  $("search-box").addEventListener("input", (event) => {
+    currentQuery = event.target.value;
     currentPage = 1;
     render();
   });
@@ -273,16 +331,17 @@ function bindEvents() {
     currentPage = 1;
     render();
   });
+  $("export-csv").addEventListener("click", exportCSV);
 
-  document.addEventListener("change", (e) => {
-    const target = e.target;
-    if (target.matches("input[type='radio'][data-review-id]")) {
+  document.addEventListener("change", (event) => {
+    const target = event.target;
+    if (target.matches("input[type='radio'][data-review-id], select[data-review-id]")) {
       updateResponse(target.dataset.reviewId, target.dataset.field, target.value);
     }
   });
 
-  document.addEventListener("input", (e) => {
-    const target = e.target;
+  document.addEventListener("input", (event) => {
+    const target = event.target;
     if (target.matches("textarea[data-review-id]")) {
       updateResponse(target.dataset.reviewId, target.dataset.field, target.value);
     }
