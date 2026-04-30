@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blind A/B AAC Review</title>
-  <meta name="description" content="A blind A/B review website for comparing two generated AAC symbol outputs across 100 items.">
+  <meta name="description" content="A blind A/B review website for comparing two generated AAC symbol outputs across 100 items using six AAC-supported learning criteria.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
         <div><strong id="total-items">100</strong><span>Items</span></div>
         <div><strong id="current-page-stat">1 / 10</strong><span>Current page</span></div>
         <div><strong>10</strong><span>Items per page</span></div>
-        <div><strong>Blind</strong><span>A/B order</span></div>
+        <div><strong>6</strong><span>Review criteria</span></div>
       </div>
     </div>
   </header>
@@ -45,9 +45,19 @@
     <section class="instructions" aria-label="instructions">
       <h2>Reviewer Instructions</h2>
       <p>
-        For each item, compare Option A and Option B based on whether the generated symbols accurately and safely represent
-        the sentence. You may choose A, B, Tie, or Neither for each criterion. Your choices are saved locally in this browser.
+        For each item, compare Option A and Option B according to the six AAC-supported learning criteria below.
+        For each criterion, select A, B, Tie, or Neither. Your choices are saved locally in this browser and can be exported as a CSV file.
       </p>
+      <div class="criteria-guide-compact" aria-label="six review criteria">
+        <ol>
+          <li><strong>C01 Semantic fidelity:</strong> Which option better preserves the intended meaning of the sentence?</li>
+          <li><strong>C02 Functional communication value:</strong> Which option better supports practical AAC communication in context?</li>
+          <li><strong>C03 Symbol transparency and iconicity:</strong> Which option uses more visually guessable and meaningful symbols?</li>
+          <li><strong>C04 Coverage of key concepts:</strong> Which option better includes essential people, actions, objects, conditions, and relations?</li>
+          <li><strong>C06 Safety and risk-sensitive appropriateness:</strong> Which option is safer, more respectful, and less likely to mislead?</li>
+          <li><strong>C10 Cognitive load management:</strong> Which option is more concise, focused, and cognitively efficient?</li>
+        </ol>
+      </div>
     </section>
 
     <section id="items-container" class="items" aria-live="polite"></section>
