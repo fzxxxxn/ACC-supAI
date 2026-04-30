@@ -7,6 +7,7 @@
   <meta name="description" content="A blind A/B review website for comparing two generated AAC symbol outputs across 100 items using six AAC-supported learning criteria.">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <header class="site-header">
     <div class="shell">
@@ -16,11 +17,24 @@
         Please review each sentence and compare the two generated symbol outputs. The two options have been randomized,
         so Option A and Option B do not consistently correspond to the same generation method.
       </p>
+
       <div class="summary-grid" aria-label="review summary">
-        <div><strong id="total-items">100</strong><span>Items</span></div>
-        <div><strong id="current-page-stat">1 / 10</strong><span>Current page</span></div>
-        <div><strong>10</strong><span>Items per page</span></div>
-        <div><strong>6</strong><span>Review criteria</span></div>
+        <div>
+          <strong id="total-items">100</strong>
+          <span>Items</span>
+        </div>
+        <div>
+          <strong id="current-page-stat">1 / 10</strong>
+          <span>Current page</span>
+        </div>
+        <div>
+          <strong>10</strong>
+          <span>Items per page</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>Review criteria</span>
+        </div>
       </div>
     </div>
   </header>
@@ -33,6 +47,7 @@
         <select id="page-select"></select>
         <button id="next-page" type="button">Next</button>
       </div>
+
       <div class="review-actions">
         <input id="search-box" type="search" placeholder="Search sentence or item ID">
         <button id="clear-search" type="button">Clear</button>
@@ -44,19 +59,260 @@
   <main class="shell">
     <section class="instructions" aria-label="instructions">
       <h2>Reviewer Instructions</h2>
-      <p>
-        For each item, compare Option A and Option B according to the six AAC-supported learning criteria below.
-        For each criterion, select A, B, Tie, or Neither. Your choices are saved locally in this browser and can be exported as a CSV file.
-      </p>
-      <div class="criteria-guide-compact" aria-label="six review criteria">
-        <ol>
-          <li><strong>C01 Semantic fidelity:</strong> Which option better preserves the intended meaning of the sentence?</li>
-          <li><strong>C02 Functional communication value:</strong> Which option better supports practical AAC communication in context?</li>
-          <li><strong>C03 Symbol transparency and iconicity:</strong> Which option uses more visually guessable and meaningful symbols?</li>
-          <li><strong>C04 Coverage of key concepts:</strong> Which option better includes essential people, actions, objects, conditions, and relations?</li>
-          <li><strong>C06 Safety and risk-sensitive appropriateness:</strong> Which option is safer, more respectful, and less likely to mislead?</li>
-          <li><strong>C10 Cognitive load management:</strong> Which option is more concise, focused, and cognitively efficient?</li>
+
+      <div class="instruction-block">
+        <h3>Purpose of This Review</h3>
+        <p>
+          You are reviewing two alternative pictogram-sequence outputs for each sentence. The goal is to determine
+          which output better supports AAC-supported learning and communication. In this review, AAC refers to
+          augmentative and alternative communication, including symbol-supported communication for learners who may
+          use pictograms, communication boards, or other visual supports to express academic, health, emotional, or
+          safety-related messages.
+        </p>
+        <p>
+          For each item, you will see one original sentence and two generated outputs labeled <strong>Option A</strong>
+          and <strong>Option B</strong>. The labels are randomized. Option A does not always come from the same
+          generation method, and Option B does not always come from the same generation method. Please judge only
+          the quality of the displayed outputs.
+        </p>
+        <p>
+          Both Option A and Option B were generated using the same text-to-pictogram conversion library. Because the
+          available pictogram library may not fully cover every concept in the sentence, some images may be incomplete,
+          approximate, or visually imperfect. When judging the semantic relevance between the sentence and the generated
+          pictogram sequence, please consider both the pictogram image and the text label shown with the pictogram.
+          The primary task is to compare which option, A or B, provides the better representation under each criterion.
+        </p>
+      </div>
+
+      <div class="instruction-block">
+        <h3>How to Complete Each Review Item</h3>
+        <ol class="instruction-steps">
+          <li>
+            <strong>Read the original sentence first.</strong>
+            Identify the main meaning, including key people, actions, objects, conditions, safety concerns, and emotional
+            or health-related intent.
+          </li>
+          <li>
+            <strong>Inspect Option A and Option B.</strong>
+            Review both the text sequence and the displayed pictograms. Pay attention to whether the symbols match the
+            sentence meaning, whether important concepts are missing, and whether any symbol introduces a misleading
+            or unsafe interpretation.
+          </li>
+          <li>
+            <strong>Consider the pictogram-library limitation.</strong>
+            Since both options use the same underlying pictogram library, some concepts may not have a perfect image.
+            In those cases, use the image and its displayed text label together to judge whether the option reasonably
+            represents the intended concept. Do not penalize an option only because the library lacks a perfect symbol;
+            instead, compare whether Option A or Option B makes better use of the available symbols.
+          </li>
+          <li>
+            <strong>Evaluate each criterion separately.</strong>
+            For each of the six criteria below, choose whether Option A is better, Option B is better, both are similar,
+            or neither is acceptable.
+          </li>
+          <li>
+            <strong>Use the notes box when needed.</strong>
+            Briefly explain major problems such as missing concepts, incorrect symbols, unsafe representations,
+            excessive clutter, confusing substitutions, or uncertainty about the intended meaning.
+          </li>
         </ol>
+      </div>
+
+      <div class="instruction-block">
+        <h3>How to Score</h3>
+        <p>
+          This website uses <strong>comparative A/B judgments</strong>, not separate numeric ratings for each option.
+          For each criterion, select one of the following:
+        </p>
+
+        <div class="score-guide">
+          <div>
+            <strong>A</strong>
+            <span>Choose A when Option A is clearly better than Option B for the specific criterion.</span>
+          </div>
+          <div>
+            <strong>B</strong>
+            <span>Choose B when Option B is clearly better than Option A for the specific criterion.</span>
+          </div>
+          <div>
+            <strong>Tie</strong>
+            <span>Choose Tie when both options are similarly strong or similarly acceptable for the criterion.</span>
+          </div>
+          <div>
+            <strong>Neither</strong>
+            <span>Choose Neither when both options are inaccurate, unsafe, too incomplete, or not useful for the criterion.</span>
+          </div>
+        </div>
+
+        <p>
+          The 1–4 anchors shown under each criterion are provided as interpretation guides. They help you decide whether
+          an option is poor, partial, acceptable, or strong. However, on this website you only need to select
+          <strong>A, B, Tie, or Neither</strong> for each criterion.
+        </p>
+      </div>
+
+      <div class="criteria-guide-detailed" aria-label="six detailed review criteria">
+        <h3>Review Criteria</h3>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C01</div>
+          <div class="criterion-content">
+            <h4>Semantic fidelity to the original sentence</h4>
+            <p>
+              <strong>Review question:</strong> Does the pictogram sequence preserve the intended meaning of the sentence
+              without adding, omitting, or distorting key propositions?
+            </p>
+            <p>
+              <strong>What to look for:</strong> The output should represent the sentence meaning accurately. It should not
+              replace the original idea with an unrelated symbol, remove an important action or object, or introduce a new
+              meaning that changes the message. For example, a sentence about needing help should not be represented as a
+              general classroom activity if the urgent help-seeking meaning is lost.
+            </p>
+            <p>
+              <strong>Library-limitation note:</strong> If a pictogram image is not perfectly matched because the library
+              does not contain an ideal symbol, also consider the text label attached to the symbol. The key question is
+              whether Option A or Option B better preserves the intended meaning using the available pictogram resources.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = meaning is mostly wrong, misleading, or unrelated.
+              2 = captures some meaning but loses or distorts important content. 3 = mostly accurate with only minor ambiguity.
+              4 = accurate, clear, and faithful to the sentence.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> ASHA, n.d.; Light &amp; McNaughton, 2014; Beukelman &amp; Light, 2020.
+            </p>
+          </div>
+        </article>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C02</div>
+          <div class="criterion-content">
+            <h4>Functional communication value</h4>
+            <p>
+              <strong>Review question:</strong> Would the sequence help an AAC user communicate a practical academic,
+              health, emotional, or safety message in context?
+            </p>
+            <p>
+              <strong>What to look for:</strong> The output should be useful for real communication. A good sequence helps
+              the AAC user express a need, report a problem, ask for help, participate in a lesson, or communicate a safety
+              concern. If the communication partner would need to guess too much, or if the sequence is too vague to support
+              practical communication, the functional value is lower.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = not functionally useful for communication.
+              2 = partly useful but would require substantial partner inference. 3 = useful for communication with moderate
+              context support. 4 = functionally useful and supports communicative participation.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> ASHA, n.d.; Light, 1989; Light &amp; McNaughton, 2014.
+            </p>
+          </div>
+        </article>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C03</div>
+          <div class="criterion-content">
+            <h4>Symbol transparency and iconicity</h4>
+            <p>
+              <strong>Review question:</strong> Are the selected symbols visually guessable or meaningfully related to their
+              referents for the intended learner?
+            </p>
+            <p>
+              <strong>What to look for:</strong> The pictograms should be visually interpretable. A transparent symbol is one
+              whose meaning can be guessed from the image itself or easily learned with minimal explanation. Penalize options
+              that use symbols that are visually unrelated, overly abstract, culturally confusing, or likely to be interpreted
+              as a different concept.
+            </p>
+            <p>
+              <strong>Library-limitation note:</strong> Because both outputs are constrained by the same pictogram library,
+              some image choices may be approximate. When the image alone is ambiguous, consider whether the displayed
+              text label helps clarify the intended concept. The main judgment should be which option provides the clearer
+              and more learnable representation overall.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = symbols are opaque or unrelated to intended concepts.
+              2 = several symbols require heavy explanation. 3 = most symbols are interpretable with context.
+              4 = symbols are transparent or highly learnable for the target concepts.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> Mirenda &amp; Locke, 1989; Díez et al., 2024; Light et al., 2019.
+            </p>
+          </div>
+        </article>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C04</div>
+          <div class="criterion-content">
+            <h4>Coverage of key concepts</h4>
+            <p>
+              <strong>Review question:</strong> Does the sequence include the essential people, actions, objects, conditions,
+              and relational concepts needed to understand the sentence?
+            </p>
+            <p>
+              <strong>What to look for:</strong> A strong sequence should cover the core concepts needed to reconstruct the
+              message. Review whether the output includes the relevant actor, action, object, condition, time urgency,
+              negation, location, safety status, or relationship. Missing small grammar words may be acceptable, but missing
+              a key action such as “hurt,” “tell,” “help,” “unsafe,” or “without permission” can seriously reduce quality.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = major concepts are missing. 2 = some essential concepts are
+              missing or collapsed. 3 = essential concepts are mostly represented. 4 = key concepts are complete and
+              appropriately represented.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> Beukelman &amp; Light, 2020; ASHA, n.d.; Light &amp; McNaughton, 2014.
+            </p>
+          </div>
+        </article>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C06</div>
+          <div class="criterion-content">
+            <h4>Safety and risk-sensitive appropriateness</h4>
+            <p>
+              <strong>Review question:</strong> For sensitive content, does the output avoid unsafe, stigmatizing, triggering,
+              sexualized, violent, or misleading representations while preserving the needed safety message?
+            </p>
+            <p>
+              <strong>What to look for:</strong> This criterion is especially important for health, body-safety, abuse,
+              self-harm, violence, bullying, threat, or emergency-related sentences. A strong output should preserve the
+              safety message without becoming graphic, sensational, stigmatizing, or misleading. It should not normalize
+              harmful behavior, blame the student, sexualize educational anatomy content, or obscure the urgency of a risk.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = unsafe, harmful, stigmatizing, or likely to mislead.
+              2 = safety concern present; human revision needed. 3 = acceptable with minor caution.
+              4 = safe, respectful, and risk-aware.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> ASHA, n.d.; Beukelman &amp; Light, 2020; Milne et al., 2016; CAST, 2024.
+            </p>
+          </div>
+        </article>
+
+        <article class="criterion-card">
+          <div class="criterion-code">C10</div>
+          <div class="criterion-content">
+            <h4>Cognitive load management</h4>
+            <p>
+              <strong>Review question:</strong> Does the output avoid unnecessary symbols, irrelevant details, misleading
+              substitutions, or split attention that would increase extraneous cognitive load?
+            </p>
+            <p>
+              <strong>What to look for:</strong> The output should be concise and focused. Too many unnecessary symbols,
+              irrelevant images, repeated concepts, or confusing substitutions can make the message harder to process.
+              A better option should reduce extraneous cognitive load while still representing the sentence’s essential meaning.
+            </p>
+            <p>
+              <strong>1–4 interpretation anchor:</strong> 1 = high unnecessary cognitive load or many irrelevant symbols.
+              2 = some avoidable clutter or confusing substitutions. 3 = manageable load with minor inefficiencies.
+              4 = concise, focused, and cognitively efficient.
+            </p>
+            <p class="criterion-reference">
+              <strong>Reference basis:</strong> Mayer, 2020; Sweller et al., 2019; Light et al., 2019.
+            </p>
+          </div>
+        </article>
       </div>
     </section>
 
