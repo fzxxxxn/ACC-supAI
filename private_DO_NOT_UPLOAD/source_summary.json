@@ -1,0 +1,16 @@
+{
+  "source_files": {
+    "gallery.html": {
+      "internal_label": "Version A",
+      "entries": 100
+    },
+    "gallery(1).html": {
+      "internal_label": "Version B",
+      "entries": 100
+    }
+  },
+  "balanced_assignment": {
+    "gallery.html_as_option_A": 50,
+    "gallery(1).html_as_option_A": 50
+  }
+}

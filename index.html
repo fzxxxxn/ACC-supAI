@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blind A/B AAC Review</title>
+  <meta name="description" content="A blind A/B review website for comparing two generated AAC symbol outputs across 100 items.">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell">
+      <p class="eyebrow">Blind A/B Review</p>
+      <h1>AAC Generation Review</h1>
+      <p class="intro">
+        Please review each sentence and compare the two generated symbol outputs. The two options have been randomized,
+        so Option A and Option B do not consistently correspond to the same generation method.
+      </p>
+      <div class="summary-grid" aria-label="review summary">
+        <div><strong id="total-items">100</strong><span>Items</span></div>
+        <div><strong id="current-page-stat">1 / 10</strong><span>Current page</span></div>
+        <div><strong>10</strong><span>Items per page</span></div>
+        <div><strong>Blind</strong><span>A/B order</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="toolbar" aria-label="review controls">
+    <div class="shell toolbar-inner">
+      <div class="page-controls">
+        <button id="prev-page" type="button">Previous</button>
+        <label for="page-select">Page</label>
+        <select id="page-select"></select>
+        <button id="next-page" type="button">Next</button>
+      </div>
+      <div class="review-actions">
+        <input id="search-box" type="search" placeholder="Search sentence or item ID">
+        <button id="clear-search" type="button">Clear</button>
+        <button id="export-csv" type="button" class="primary">Export review CSV</button>
+      </div>
+    </div>
+  </nav>
+
+  <main class="shell">
+    <section class="instructions" aria-label="instructions">
+      <h2>Reviewer Instructions</h2>
+      <p>
+        For each item, compare Option A and Option B based on whether the generated symbols accurately and safely represent
+        the sentence. You may choose A, B, Tie, or Neither for each criterion. Your choices are saved locally in this browser.
+      </p>
+    </section>
+
+    <section id="items-container" class="items" aria-live="polite"></section>
+
+    <section class="bottom-pagination" aria-label="pagination">
+      <button id="prev-page-bottom" type="button">Previous</button>
+      <span id="page-label">Page 1 of 10</span>
+      <button id="next-page-bottom" type="button">Next</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="shell">
+      <p>
+        This is a static GitHub Pages site. If images are missing, place the required files in
+        <code>assets/images/</code> with exactly the filenames listed in <code>required_images.txt</code>.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/review_data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
