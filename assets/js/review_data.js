@@ -77,12 +77,16 @@ window.REVIEW_DATA = {
             "filename": "ex_002__00__vagina__sclera_wash-private-parts-c9a49253.png"
           },
           {
-            "label": "can of sardines",
-            "filename": "ex_002__01__is_part_of__arasaac_can-of-sardines-1bd959d3.png"
+            "label": "part",
+            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
           },
           {
             "label": "human",
             "filename": "ex_002__02__the_female_reproductive_system__arasaac_human-9a154e95.png"
+          },
+          {
+            "label": "reproduction",
+            "filename": "ex_001__03__reproductive_system__arasaac_reproduction-d05f661e.png"
           }
         ]
       },
@@ -136,9 +140,9 @@ window.REVIEW_DATA = {
             "label": "uterus",
             "filename": "ex_003__00__uterus__sclera_uterus-420163fe.png"
           },
-          {
-            "label": "can of sardines",
-            "filename": "ex_003__01__is_part_of__arasaac_can-of-sardines-1bd959d3.png"
+           {
+            "label": "part",
+            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
           },
           {
             "label": "reproduction",
