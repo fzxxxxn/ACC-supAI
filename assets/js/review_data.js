@@ -29,8 +29,8 @@ window.REVIEW_DATA = {
             "filename": "ex_001__00__penis__sclera_genitals-0fe4dd98.png"
           },
           {
-            "label": "to to take part",
-            "filename": "ex_001__01__part_of__arasaac_to-to-take-part-38b24796.png"
+            "label": "part",
+            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
           },
           {
             "label": "male",
