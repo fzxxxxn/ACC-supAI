@@ -26,13 +26,17 @@ window.REVIEW_DATA = {
             "label": "genitals",
             "filename": "ex_001__penis__sclera_genitals-0fe4dd98.png"
           },
-          {
-            "label": "private",
-            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
+            {
+            "label": "part",
+            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
           },
           {
-            "label": "infrared systems for assistive listening",
-            "filename": "ex_001__male_reproductive_system__sclera_infrared-systems-for-assistive-listening-0bad8829.png"
+            "label": "male",
+            "filename": "ex_001__02__male__arasaac_male-1fc8381c.png"
+          },
+          {
+            "label": "reproduction",
+            "filename": "ex_001__03__reproductive_system__arasaac_reproduction-d05f661e.png"
           }
         ]
       },
