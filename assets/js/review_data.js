@@ -1,12 +1,13 @@
 window.REVIEW_DATA = {
   "metadata": {
     "title": "Blind A/B AAC Review",
-    "generatedAt": "2026-04-30",
+    "generatedAt": "2026-05-07",
     "totalItems": 100,
     "itemsPerPage": 10,
     "totalPages": 10,
-    "randomization": "Balanced blind A/B assignment; source mapping is intentionally excluded from public review data.",
-    "publicDataNote": "Original source version/file names are intentionally excluded from this public review data."
+    "randomization": "Balanced deterministic blind A/B assignment; seed=20260507; 50 base-as-A and 50 v3-as-A.",
+    "publicDataNote": "Option source version/file names are intentionally excluded from public review data. Use option_source_mapping.csv for private source mapping.",
+    "imageBasePath": "assets/images/"
   },
   "items": [
     {
@@ -17,18 +18,19 @@ window.REVIEW_DATA = {
       "sentence": "The penis is part of the male reproductive system.",
       "optionA": {
         "sequence": [
-          "genitals [HIGH-RISK]",
-          "private [HIGH-RISK]",
-          "infrared systems for assistive listening [HIGH-RISK]"
+          "genitals",
+          "to to take part",
+          "male",
+          "reproduction"
         ],
         "symbols": [
           {
             "label": "genitals",
-            "filename": "ex_001__penis__sclera_genitals-0fe4dd98.png"
+            "filename": "ex_001__00__penis__sclera_genitals-0fe4dd98.png"
           },
-            {
-            "label": "part",
-            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
+          {
+            "label": "to to take part",
+            "filename": "ex_001__01__part_of__arasaac_to-to-take-part-38b24796.png"
           },
           {
             "label": "male",
@@ -65,27 +67,22 @@ window.REVIEW_DATA = {
       "sentence": "The vagina is part of the female reproductive system.",
       "optionA": {
         "sequence": [
-          "wash private parts 1 [HIGH-RISK]",
-          "part [HIGH-RISK]",
-          "female [HIGH-RISK]",
-          "music system [HIGH-RISK]"
+          "wash private parts",
+          "can of sardines",
+          "human"
         ],
         "symbols": [
           {
-            "label": "wash private parts 1",
-            "filename": "ex_002__vagina__sclera_wash-private-parts-1-092273a0.png"
+            "label": "wash private parts",
+            "filename": "ex_002__00__vagina__sclera_wash-private-parts-c9a49253.png"
           },
           {
-            "label": "part",
-            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
+            "label": "can of sardines",
+            "filename": "ex_002__01__is_part_of__arasaac_can-of-sardines-1bd959d3.png"
           },
           {
-            "label": "female",
-            "filename": "ex_002__female__arasaac_female-f17913a8.png"
-          },
-          {
-            "label": "music system",
-            "filename": "ex_002__reproductive_system__arasaac_music-system-dfc7b97d.png"
+            "label": "human",
+            "filename": "ex_002__02__the_female_reproductive_system__arasaac_human-9a154e95.png"
           }
         ]
       },
@@ -130,22 +127,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "uterus 1 [HIGH-RISK]",
-          "part [HIGH-RISK]",
-          "music system [HIGH-RISK]"
+          "uterus",
+          "can of sardines",
+          "reproduction"
         ],
         "symbols": [
           {
-            "label": "uterus 1",
-            "filename": "ex_003__uterus__sclera_uterus-1-a0879887.png"
+            "label": "uterus",
+            "filename": "ex_003__00__uterus__sclera_uterus-420163fe.png"
           },
           {
-            "label": "part",
-            "filename": "ex_003__is_part_of__arasaac_part-e4e20ab0.png"
+            "label": "can of sardines",
+            "filename": "ex_003__01__is_part_of__arasaac_can-of-sardines-1bd959d3.png"
           },
           {
-            "label": "music system",
-            "filename": "ex_003__the_reproductive_system__arasaac_music-system-dfc7b97d.png"
+            "label": "reproduction",
+            "filename": "ex_003__02__the_reproductive_system__arasaac_reproduction-d05f661e.png"
           }
         ]
       }
@@ -158,27 +155,27 @@ window.REVIEW_DATA = {
       "sentence": "Breasts are body parts and should be discussed respectfully in health class.",
       "optionA": {
         "sequence": [
-          "breasts [HIGH-RISK]",
-          "parts [HIGH-RISK]",
-          "[discussed respectfully]",
-          "maths class [HIGH-RISK]"
+          "breast",
+          "make - do - write",
+          "be rude",
+          "health"
         ],
         "symbols": [
           {
-            "label": "breasts",
-            "filename": "ex_004__Breasts__arasaac_breasts-2c998c7a.png"
+            "label": "breast",
+            "filename": "ex_004__00__Breasts__sclera_breast-6c453e0b.png"
           },
           {
-            "label": "parts",
-            "filename": "ex_004__body_parts__arasaac_parts-db64c4dd.png"
+            "label": "make - do - write",
+            "filename": "ex_004__01__discussed__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "discussed respectfully",
-            "filename": ""
+            "label": "be rude",
+            "filename": "ex_004__02__respectfully__sclera_be-rude-8484dbc4.png"
           },
           {
-            "label": "maths class",
-            "filename": "ex_004__health_class__arasaac_maths-class-60967e81.png"
+            "label": "health",
+            "filename": "ex_004__03__health_class__arasaac_health-9ce9fd2b.png"
           }
         ]
       },
@@ -218,7 +215,7 @@ window.REVIEW_DATA = {
         "symbols": [
           {
             "label": "testicles",
-            "filename": "ex_005__Testicles__arasaac_testicles-eba85534.png"
+            "filename": "ex_005__testicles__arasaac_testicles-eba85534.png"
           },
           {
             "label": "music system",
@@ -228,17 +225,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "testicles [HIGH-RISK]",
-          "music system [HIGH-RISK]"
+          "testicles",
+          "part",
+          "human"
         ],
         "symbols": [
           {
             "label": "testicles",
-            "filename": "ex_005__testicles__arasaac_testicles-eba85534.png"
+            "filename": "ex_005__00__Testicles__arasaac_testicles-eba85534.png"
           },
           {
-            "label": "music system",
-            "filename": "ex_005__male_reproductive_system__arasaac_music-system-dfc7b97d.png"
+            "label": "part",
+            "filename": "ex_005__01__are_part_of__arasaac_part-e4e20ab0.png"
+          },
+          {
+            "label": "human",
+            "filename": "ex_005__02__the_male_reproductive_system__arasaac_human-9a154e95.png"
           }
         ]
       }
@@ -272,27 +274,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "private [HIGH-RISK]",
-          "[should only be discussed]",
-          "safe [HIGH-RISK]",
-          "[appropriate settings]"
+          "wash private parts",
+          "must stay together",
+          "conversation",
+          "put in a safe place"
         ],
         "symbols": [
           {
-            "label": "private",
-            "filename": "ex_006__Private_body_parts__arasaac_private-a905dc53.png"
+            "label": "wash private parts",
+            "filename": "ex_006__00__Private_body_parts__sclera_wash-private-parts-c9a49253.png"
           },
           {
-            "label": "should only be discussed",
-            "filename": ""
+            "label": "must stay together",
+            "filename": "ex_006__01__should_only__sclera_must-stay-together-405d27bb.png"
           },
           {
-            "label": "safe",
-            "filename": "ex_006__safe__arasaac_safe-9bffe81c.png"
+            "label": "conversation",
+            "filename": "ex_006__02__be_discussed__arasaac_conversation-fc4e7e0a.png"
           },
           {
-            "label": "appropriate settings",
-            "filename": ""
+            "label": "put in a safe place",
+            "filename": "ex_006__03__safe_and_appropriate_settings__arasaac_put-in-a-safe-place-629256e5.png"
           }
         ]
       }
@@ -326,27 +328,37 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "doctor 2 [HIGH-RISK]",
-          "touch [HIGH-RISK]",
-          "private [HIGH-RISK]",
-          "healthy [HIGH-RISK]"
+          "doctor 2",
+          "make - do - write",
+          "wash private parts",
+          "old person 1",
+          "healthy",
+          "help"
         ],
         "symbols": [
           {
             "label": "doctor 2",
-            "filename": "ex_007__doctor__arasaac_doctor-2-21cd4749.png"
+            "filename": "ex_007__00__A_doctor__arasaac_doctor-2-21cd4749.png"
           },
           {
-            "label": "touch",
-            "filename": "ex_007__check__arasaac_touch-1e7f9296.png"
+            "label": "make - do - write",
+            "filename": "ex_007__01__may_check__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "private",
-            "filename": "ex_007__private_body_parts__arasaac_private-a905dc53.png"
+            "label": "wash private parts",
+            "filename": "ex_007__02__private_body_parts__sclera_wash-private-parts-c9a49253.png"
+          },
+          {
+            "label": "old person 1",
+            "filename": "ex_007__03__a_person__arasaac_old-person-1-a490fe45.png"
           },
           {
             "label": "healthy",
-            "filename": "ex_007__healthy__mulberry_healthy-ee7dcc0a.svg"
+            "filename": "ex_007__04__healthy__arasaac_healthy-74f0f712.png"
+          },
+          {
+            "label": "help",
+            "filename": "ex_007__05__to_help_keep__arasaac_help-b0621ed4.png"
           }
         ]
       }
@@ -358,6 +370,47 @@ window.REVIEW_DATA = {
       "position": 8,
       "sentence": "If a student has questions about body changes, they should ask a trusted adult or health teacher.",
       "optionA": {
+        "sequence": [
+          "student 1",
+          "ask a question",
+          "body",
+          "to ask",
+          "administration",
+          "or",
+          "teacher"
+        ],
+        "symbols": [
+          {
+            "label": "student 1",
+            "filename": "ex_008__00__student__arasaac_student-1-93320fb1.png"
+          },
+          {
+            "label": "ask a question",
+            "filename": "ex_008__01__questions__sclera_ask-a-question-50cd8f55.png"
+          },
+          {
+            "label": "body",
+            "filename": "ex_008__02__body_changes__arasaac_body-60984d66.png"
+          },
+          {
+            "label": "to ask",
+            "filename": "ex_008__03__ask__arasaac_to-ask-51740845.png"
+          },
+          {
+            "label": "administration",
+            "filename": "ex_008__04__trusted_adult__arasaac_administration-1c6622c3.png"
+          },
+          {
+            "label": "or",
+            "filename": "ex_008__05__or__arasaac_or-bb8bf1d9.png"
+          },
+          {
+            "label": "teacher",
+            "filename": "ex_008__06__health_teacher__sclera_teacher-cc15b179.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "body 1 [HIGH-RISK]",
           "ask 2 [HIGH-RISK]",
@@ -382,37 +435,6 @@ window.REVIEW_DATA = {
             "filename": "ex_008__health_teacher__arasaac_national-health-clinic-27a7fc8f.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "body 1 [HIGH-RISK]",
-          "ask 2 [HIGH-RISK]",
-          "talk child to adult [HIGH-RISK]",
-          "national health clinic [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_008__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "body 1",
-            "filename": "ex_008__body_changes__arasaac_body-1-5aa7edf9.png"
-          },
-          {
-            "label": "ask 2",
-            "filename": "ex_008__ask__arasaac_ask-2-0c388ab8.png"
-          },
-          {
-            "label": "talk child to adult",
-            "filename": "ex_008__a_trusted_adult__sclera_talk-child-to-adult-70e87b6b.png"
-          },
-          {
-            "label": "national health clinic",
-            "filename": "ex_008__health_teacher__arasaac_national-health-clinic-27a7fc8f.png"
-          }
-        ]
       }
     },
     {
@@ -423,22 +445,32 @@ window.REVIEW_DATA = {
       "sentence": "Health lessons about body parts should use respectful and age-appropriate language.",
       "optionA": {
         "sequence": [
-          "Mathematics lessons [HIGH-RISK]",
-          "parts [HIGH-RISK]",
-          "understand language [HIGH-RISK]"
+          "health",
+          "parts",
+          "to use the communication board",
+          "language",
+          "language"
         ],
         "symbols": [
           {
-            "label": "Mathematics lessons",
-            "filename": "ex_009__Health_lessons__arasaac_mathematics-lessons-265a1728.png"
+            "label": "health",
+            "filename": "ex_009__00__Health_lessons__arasaac_health-9ce9fd2b.png"
           },
           {
             "label": "parts",
-            "filename": "ex_009__body_parts__arasaac_parts-db64c4dd.png"
+            "filename": "ex_009__01__body_parts__arasaac_parts-db64c4dd.png"
           },
           {
-            "label": "understand language",
-            "filename": "ex_009__respectful_and_age-appropriate_language__sclera_understand-language-16a05aee.png"
+            "label": "to use the communication board",
+            "filename": "ex_009__02__use__arasaac_to-use-the-communication-board-27da7d9a.png"
+          },
+          {
+            "label": "language",
+            "filename": "ex_009__03__respectful__arasaac_language-7a88e742.png"
+          },
+          {
+            "label": "language",
+            "filename": "ex_009__04__age-appropriate_language__arasaac_language-7a88e742.png"
           }
         ]
       },
@@ -477,6 +509,42 @@ window.REVIEW_DATA = {
       "sentence": "Students should know the correct names for body parts for safety and health communication.",
       "optionA": {
         "sequence": [
+          "students oats",
+          "I do not know",
+          "to correct",
+          "parts",
+          "safety boxes",
+          "health"
+        ],
+        "symbols": [
+          {
+            "label": "students oats",
+            "filename": "ex_010__00__Students__sclera_students-oats-1da31ff6.png"
+          },
+          {
+            "label": "I do not know",
+            "filename": "ex_010__01__should_know__arasaac_i-do-not-know-03734d3c.png"
+          },
+          {
+            "label": "to correct",
+            "filename": "ex_010__02__correct_names__arasaac_to-correct-5846f0ef.png"
+          },
+          {
+            "label": "parts",
+            "filename": "ex_010__03__body_parts__arasaac_parts-db64c4dd.png"
+          },
+          {
+            "label": "safety boxes",
+            "filename": "ex_010__04__for_safety__arasaac_safety-boxes-39d1eb17.png"
+          },
+          {
+            "label": "health",
+            "filename": "ex_010__05__health_communication__arasaac_health-9ce9fd2b.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "parts [HIGH-RISK]",
           "[names]",
           "[safety]",
@@ -500,32 +568,6 @@ window.REVIEW_DATA = {
             "filename": "ex_010__health__arasaac_national-health-clinic-27a7fc8f.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "[correct names]",
-          "parts [HIGH-RISK]",
-          "safety belt touch [HIGH-RISK]",
-          "Communication board [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "correct names",
-            "filename": ""
-          },
-          {
-            "label": "parts",
-            "filename": "ex_010__body_parts__arasaac_parts-db64c4dd.png"
-          },
-          {
-            "label": "safety belt touch",
-            "filename": "ex_010__safety__sclera_safety-belt-touch-fc73f591.png"
-          },
-          {
-            "label": "Communication board",
-            "filename": "ex_010__health_communication__tawasol_communication-board-d5b9477c.png"
-          }
-        ]
       }
     },
     {
@@ -535,42 +577,6 @@ window.REVIEW_DATA = {
       "position": 1,
       "sentence": "If someone touches a private part without permission, tell a safe adult right away.",
       "optionA": {
-        "sequence": [
-          "touch [HIGH-RISK]",
-          "part [HIGH-RISK]",
-          "to speak without listening [HIGH-RISK]",
-          "test tell answer [HIGH-RISK]",
-          "adult [HIGH-RISK]",
-          "right [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "touch",
-            "filename": "ex_011__touches__arasaac_touch-1e7f9296.png"
-          },
-          {
-            "label": "part",
-            "filename": "ex_011__a_private_part__arasaac_part-e4e20ab0.png"
-          },
-          {
-            "label": "to speak without listening",
-            "filename": "ex_011__without_permission__arasaac_to-speak-without-listening-d313bd50.png"
-          },
-          {
-            "label": "test tell answer",
-            "filename": "ex_011__tell__sclera_test-tell-answer-da38f29a.png"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_011__a_safe_adult__arasaac_adult-82a736ae.png"
-          },
-          {
-            "label": "right",
-            "filename": "ex_011__right_away__arasaac_right-baa9d42e.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "private [HIGH-RISK]",
           "don't touch! [HIGH-RISK]",
@@ -593,6 +599,47 @@ window.REVIEW_DATA = {
           {
             "label": "test tell answer",
             "filename": "ex_011__tell_immediately__sclera_test-tell-answer-da38f29a.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "angry at someone",
+          "intimate touching",
+          "private",
+          "consent",
+          "to talk 1",
+          "adult",
+          "right"
+        ],
+        "symbols": [
+          {
+            "label": "angry at someone",
+            "filename": "ex_011__00__someone__sclera_angry-at-someone-e5ae978d.png"
+          },
+          {
+            "label": "intimate touching",
+            "filename": "ex_011__01__touches__sclera_intimate-touching-c8b10f6d.png"
+          },
+          {
+            "label": "private",
+            "filename": "ex_011__02__a_private_part__arasaac_private-a905dc53.png"
+          },
+          {
+            "label": "consent",
+            "filename": "ex_011__03__without_permission__arasaac_consent-0fa9d71b.png"
+          },
+          {
+            "label": "to talk 1",
+            "filename": "ex_011__04__tell__arasaac_to-talk-1-51e9f957.png"
+          },
+          {
+            "label": "adult",
+            "filename": "ex_011__05__a_safe_adult__arasaac_adult-82a736ae.png"
+          },
+          {
+            "label": "right",
+            "filename": "ex_011__06__right_away__arasaac_right-baa9d42e.png"
           }
         ]
       }
@@ -636,37 +683,42 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "to feel sick 1 [HIGH-RISK]",
-          "test tell answer [HIGH-RISK]",
-          "teacher [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "to come near [HIGH-RISK]"
+          "student",
+          "in [REVIEW]",
+          "tell",
+          "listen teacher",
+          "or",
+          "counselor",
+          "follow game rules 1"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_012__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_012__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "to feel sick 1",
-            "filename": "ex_012__feels_unsafe__arasaac_to-feel-sick-1-ed4e0732.png"
+            "label": "in",
+            "filename": "ex_012__01__feels_unsafe__arasaac_in-e65d5fe4.png"
           },
           {
-            "label": "test tell answer",
-            "filename": "ex_012__tell__sclera_test-tell-answer-da38f29a.png"
+            "label": "tell",
+            "filename": "ex_012__02__should_tell__arasaac_tell-ea0aa1bb.png"
           },
           {
-            "label": "teacher",
-            "filename": "ex_012__the_teacher__sclera_teacher-cc15b179.png"
+            "label": "listen teacher",
+            "filename": "ex_012__03__the_teacher__sclera_listen-teacher-483a4a74.png"
+          },
+          {
+            "label": "or",
+            "filename": "ex_012__04__or__arasaac_or-bb8bf1d9.png"
           },
           {
             "label": "counselor",
-            "filename": "ex_012__counselor__arasaac_counselor-a83435d6.png"
+            "filename": "ex_012__05__counselor__arasaac_counselor-a83435d6.png"
           },
           {
-            "label": "to come near",
-            "filename": "ex_012__immediately__arasaac_to-come-near-56d14458.png"
+            "label": "follow game rules 1",
+            "filename": "ex_012__06__immediately__sclera_follow-game-rules-1-1d448cd0.png"
           }
         ]
       }
@@ -678,6 +730,37 @@ window.REVIEW_DATA = {
       "position": 3,
       "sentence": "If there is bleeding, get help from the nurse now.",
       "optionA": {
+        "sequence": [
+          "to lift the toilet seat",
+          "blood",
+          "ask for help",
+          "nurse",
+          "now 1"
+        ],
+        "symbols": [
+          {
+            "label": "to lift the toilet seat",
+            "filename": "ex_013__00__If__arasaac_to-lift-the-toilet-seat-8d07109f.png"
+          },
+          {
+            "label": "blood",
+            "filename": "ex_013__01__bleeding__arasaac_blood-51435481.png"
+          },
+          {
+            "label": "ask for help",
+            "filename": "ex_013__02__get_help__sclera_ask-for-help-0bde6154.png"
+          },
+          {
+            "label": "nurse",
+            "filename": "ex_013__03__the_nurse__arasaac_nurse-abafa8ce.png"
+          },
+          {
+            "label": "now 1",
+            "filename": "ex_013__04__now__arasaac_now-1-f7e31dd5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "[bleeding]",
           "nurse [HIGH-RISK]",
@@ -700,32 +783,6 @@ window.REVIEW_DATA = {
           {
             "label": "now",
             "filename": "ex_013__now__arasaac_now-4e0f0aae.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "[bleeding]",
-          "seek help [HIGH-RISK]",
-          "nurse [HIGH-RISK]",
-          "now [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "bleeding",
-            "filename": ""
-          },
-          {
-            "label": "seek help",
-            "filename": "ex_013__get_help__sclera_seek-help-50aee3a1.png"
-          },
-          {
-            "label": "nurse",
-            "filename": "ex_013__the_nurse__arasaac_nurse-abafa8ce.png"
-          },
-          {
-            "label": "now",
-            "filename": "ex_013__now__sclera_now-4e0f0aae.png"
           }
         ]
       }
@@ -764,37 +821,37 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "wrinkled [HIGH-RISK]",
-          "classroom help round",
+          "faint",
+          "class",
           "call",
-          "Nurse",
-          "fire stay calm 1",
+          "nurse",
+          "to stay",
           "student"
         ],
         "symbols": [
           {
-            "label": "wrinkled",
-            "filename": "ex_014__faints__arasaac_wrinkled-33666138.png"
+            "label": "faint",
+            "filename": "ex_014__00__faints__arasaac_faint-8b39d978.png"
           },
           {
-            "label": "classroom help round",
-            "filename": "ex_014__in_class__sclera_classroom-help-round-ebe871a5.png"
+            "label": "class",
+            "filename": "ex_014__01__in_class__arasaac_class-2b64dbb6.png"
           },
           {
             "label": "call",
-            "filename": "ex_014__call__arasaac_call-8b66d480.png"
+            "filename": "ex_014__02__call__arasaac_call-8b66d480.png"
           },
           {
-            "label": "Nurse",
-            "filename": "ex_014__the_nurse__noun-project_nurse-53b27dbe.svg"
+            "label": "nurse",
+            "filename": "ex_014__03__the_nurse__arasaac_nurse-abafa8ce.png"
           },
           {
-            "label": "fire stay calm 1",
-            "filename": "ex_014__stay__sclera_fire-stay-calm-1-663d5ba7.png"
+            "label": "to stay",
+            "filename": "ex_014__04__stay_with__arasaac_to-stay-f8eb2a5d.png"
           },
           {
             "label": "student",
-            "filename": "ex_014__the_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_014__05__the_student__arasaac_student-5105e1a9.png"
           }
         ]
       }
@@ -806,6 +863,37 @@ window.REVIEW_DATA = {
       "position": 5,
       "sentence": "If a student says they cannot breathe well, get an adult immediately.",
       "optionA": {
+        "sequence": [
+          "student",
+          "to breathe",
+          "get dressed",
+          "adult",
+          "follow game rules 1"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_015__00__a_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to breathe",
+            "filename": "ex_015__01__cannot_breathe_well__arasaac_to-breathe-17f14d2b.png"
+          },
+          {
+            "label": "get dressed",
+            "filename": "ex_015__02__get__sclera_get-dressed-2faa5053.png"
+          },
+          {
+            "label": "adult",
+            "filename": "ex_015__03__an_adult__arasaac_adult-82a736ae.png"
+          },
+          {
+            "label": "follow game rules 1",
+            "filename": "ex_015__04__immediately__sclera_follow-game-rules-1-1d448cd0.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "chest 1 [HIGH-RISK]",
           "to get angry with [HIGH-RISK]",
@@ -825,32 +913,6 @@ window.REVIEW_DATA = {
             "filename": "ex_015__now__arasaac_now-4e0f0aae.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "burn [HIGH-RISK]",
-          "adult [HIGH-RISK]",
-          "date [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_015__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "burn",
-            "filename": "ex_015__cannot_breathe_well__arasaac_burn-ad9248b4.png"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_015__get_an_adult__arasaac_adult-82a736ae.png"
-          },
-          {
-            "label": "date",
-            "filename": "ex_015__immediately__arasaac_date-0f370593.png"
-          }
-        ]
       }
     },
     {
@@ -860,32 +922,6 @@ window.REVIEW_DATA = {
       "position": 6,
       "sentence": "If there is chest pain, the student should go to the nurse right away.",
       "optionA": {
-        "sequence": [
-          "chest pain [HIGH-RISK]",
-          "student [HIGH-RISK]",
-          "go to the bathroom [HIGH-RISK]",
-          "right [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "chest pain",
-            "filename": "ex_016__chest_pain__sclera_chest-pain-b23f1323.png"
-          },
-          {
-            "label": "student",
-            "filename": "ex_016__the_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "go to the bathroom",
-            "filename": "ex_016__go_to_the_nurse__arasaac_go-to-the-bathroom-06d26ba3.png"
-          },
-          {
-            "label": "right",
-            "filename": "ex_016__right_away__arasaac_right-baa9d42e.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "chest pain [HIGH-RISK]",
           "school [HIGH-RISK]",
@@ -905,6 +941,37 @@ window.REVIEW_DATA = {
             "filename": "ex_016__go_now__arasaac_now-4e0f0aae.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "chest",
+          "student",
+          "to go",
+          "tourist office",
+          "right"
+        ],
+        "symbols": [
+          {
+            "label": "chest",
+            "filename": "ex_016__00__chest_pain__arasaac_chest-b6f017e7.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_016__01__the_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to go",
+            "filename": "ex_016__02__go__arasaac_to-go-594b8558.png"
+          },
+          {
+            "label": "tourist office",
+            "filename": "ex_016__03__the_nurse__arasaac_tourist-office-9e037cda.png"
+          },
+          {
+            "label": "right",
+            "filename": "ex_016__04__right_away__arasaac_right-baa9d42e.png"
+          }
+        ]
       }
     },
     {
@@ -914,6 +981,52 @@ window.REVIEW_DATA = {
       "position": 7,
       "sentence": "If someone falls and hits their head, get adult help now.",
       "optionA": {
+        "sequence": [
+          "to lift the toilet seat",
+          "angry at someone",
+          "falls",
+          "hit",
+          "head",
+          "ask for help",
+          "help",
+          "now 1"
+        ],
+        "symbols": [
+          {
+            "label": "to lift the toilet seat",
+            "filename": "ex_017__00__If__arasaac_to-lift-the-toilet-seat-8d07109f.png"
+          },
+          {
+            "label": "angry at someone",
+            "filename": "ex_017__01__someone__sclera_angry-at-someone-e5ae978d.png"
+          },
+          {
+            "label": "falls",
+            "filename": "ex_017__02__falls__arasaac_falls-7e81f87c.png"
+          },
+          {
+            "label": "hit",
+            "filename": "ex_017__03__hits__arasaac_hit-d22e7f4e.png"
+          },
+          {
+            "label": "head",
+            "filename": "ex_017__04__head__arasaac_head-f713f712.png"
+          },
+          {
+            "label": "ask for help",
+            "filename": "ex_017__05__get_help__sclera_ask-for-help-0bde6154.png"
+          },
+          {
+            "label": "help",
+            "filename": "ex_017__06__adult_help__arasaac_help-b0621ed4.png"
+          },
+          {
+            "label": "now 1",
+            "filename": "ex_017__07__now__arasaac_now-1-f7e31dd5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "[fall]",
           "head [HIGH-RISK]",
@@ -936,32 +1049,6 @@ window.REVIEW_DATA = {
           {
             "label": "now",
             "filename": "ex_017__now__arasaac_now-4e0f0aae.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "fall [HIGH-RISK]",
-          "head [HIGH-RISK]",
-          "adult [HIGH-RISK]",
-          "now [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "fall",
-            "filename": "ex_017__falls__arasaac_fall-15e4660a.png"
-          },
-          {
-            "label": "head",
-            "filename": "ex_017__hits_their_head__sclera_head-f713f712.png"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_017__get_adult_help__arasaac_adult-82a736ae.png"
-          },
-          {
-            "label": "now",
-            "filename": "ex_017__now__sclera_now-4e0f0aae.png"
           }
         ]
       }
@@ -1000,32 +1087,47 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "hurt [HIGH-RISK]",
-          "private [HIGH-RISK]",
-          "listener [HIGH-RISK]",
-          "support teacher [HIGH-RISK]"
+          "student",
+          "to report",
+          "injury",
+          "wash private parts",
+          "make - do - write",
+          "fire stay calm",
+          "get dressed",
+          "support teacher"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_018__student__arasaac_student-5105e1a9.png"
+            "filename": "ex_018__00__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "hurt",
-            "filename": "ex_018__hurt__arasaac_hurt-b1abca5f.png"
+            "label": "to report",
+            "filename": "ex_018__01__says__arasaac_to-report-be819723.png"
           },
           {
-            "label": "private",
-            "filename": "ex_018__private_area__arasaac_private-a905dc53.png"
+            "label": "injury",
+            "filename": "ex_018__02__hurt__arasaac_injury-8f869fd6.png"
           },
           {
-            "label": "listener",
-            "filename": "ex_018__respond_calmly__arasaac_listener-906cacb7.png"
+            "label": "wash private parts",
+            "filename": "ex_018__03__private_area__sclera_wash-private-parts-c9a49253.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_018__04__respond__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "fire stay calm",
+            "filename": "ex_018__05__calmly__sclera_fire-stay-calm-0fa115c6.png"
+          },
+          {
+            "label": "get dressed",
+            "filename": "ex_018__06__get__sclera_get-dressed-2faa5053.png"
           },
           {
             "label": "support teacher",
-            "filename": "ex_018__trained_support__arasaac_support-teacher-b53bcf73.png"
+            "filename": "ex_018__07__trained_support__arasaac_support-teacher-b53bcf73.png"
           }
         ]
       }
@@ -1069,37 +1171,37 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "write [HIGH-RISK]",
-          "intimate touching [HIGH-RISK]",
-          "eye contact [HIGH-RISK]",
-          "adult [HIGH-RISK]",
-          "date [HIGH-RISK]"
+          "student",
+          "medical reports",
+          "touch [REVIEW]",
+          "contact parents",
+          "administration",
+          "follow game rules 1"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_019__a_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_019__00__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "write",
-            "filename": "ex_019__reports__arasaac_write-cf0fe3f7.png"
+            "label": "medical reports",
+            "filename": "ex_019__01__reports__arasaac_medical-reports-a677d30a.png"
           },
           {
-            "label": "intimate touching",
-            "filename": "ex_019__inappropriate_touching__sclera_intimate-touching-c8b10f6d.png"
+            "label": "touch",
+            "filename": "ex_019__02__inappropriate_touching__arasaac_touch-1e7f9296.png"
           },
           {
-            "label": "eye contact",
-            "filename": "ex_019__contact__sclera_eye-contact-d63a472b.png"
+            "label": "contact parents",
+            "filename": "ex_019__03__contact__sclera_contact-parents-bb4bb0b7.png"
           },
           {
-            "label": "adult",
-            "filename": "ex_019__the_designated_safeguarding_adult__arasaac_adult-82a736ae.png"
+            "label": "administration",
+            "filename": "ex_019__04__the_designated_safeguarding_adult__arasaac_administration-1c6622c3.png"
           },
           {
-            "label": "date",
-            "filename": "ex_019__immediately__arasaac_date-0f370593.png"
+            "label": "follow game rules 1",
+            "filename": "ex_019__05__immediately__sclera_follow-game-rules-1-1d448cd0.png"
           }
         ]
       }
@@ -1111,37 +1213,6 @@ window.REVIEW_DATA = {
       "position": 10,
       "sentence": "If a student looks very distressed after an interaction, check safety before continuing class.",
       "optionA": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "dishevelled 3 [HIGH-RISK]",
-          "wait [HIGH-RISK]",
-          "Check Mark [HIGH-RISK]",
-          "class sit [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_020__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "dishevelled 3",
-            "filename": "ex_020__looks_very_distressed__arasaac_dishevelled-3-6239cf6c.png"
-          },
-          {
-            "label": "wait",
-            "filename": "ex_020__after_an_interaction__arasaac_wait-b5518d75.png"
-          },
-          {
-            "label": "Check Mark",
-            "filename": "ex_020__check_safety__noun-project_check-mark-38665c83.svg"
-          },
-          {
-            "label": "class sit",
-            "filename": "ex_020__before_continuing_class__sclera_class-sit-db10da19.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "student",
           "dishevelled 3 [HIGH-RISK]",
@@ -1166,6 +1237,42 @@ window.REVIEW_DATA = {
             "filename": "ex_020__continue_class__sclera_class-sit-db10da19.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student 1",
+          "angry",
+          "wash hands after going to the toilet",
+          "make - do - write",
+          "safety belt",
+          "class"
+        ],
+        "symbols": [
+          {
+            "label": "student 1",
+            "filename": "ex_020__00__student__arasaac_student-1-93320fb1.png"
+          },
+          {
+            "label": "angry",
+            "filename": "ex_020__01__very_distressed__arasaac_angry-01984a19.png"
+          },
+          {
+            "label": "wash hands after going to the toilet",
+            "filename": "ex_020__02__after_an_interaction__sclera_wash-hands-after-going-to-the-toilet-a9f4e95a.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_020__03__check__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "safety belt",
+            "filename": "ex_020__04__safety__arasaac_safety-belt-7143fdf9.png"
+          },
+          {
+            "label": "class",
+            "filename": "ex_020__05__before_continuing_class__arasaac_class-2b64dbb6.png"
+          }
+        ]
       }
     },
     {
@@ -1175,6 +1282,42 @@ window.REVIEW_DATA = {
       "position": 1,
       "sentence": "A safety lesson should explain what to do if a student feels scared to go home.",
       "optionA": {
+        "sequence": [
+          "Language lesson",
+          "make - do - write",
+          "point , to",
+          "student 1",
+          "fear",
+          "go home"
+        ],
+        "symbols": [
+          {
+            "label": "Language lesson",
+            "filename": "ex_021__00__safety_lesson__arasaac_language-lesson-b062c7c5.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_021__01__explain__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "point , to",
+            "filename": "ex_021__02__what_to_do__mulberry_point-to-226b31f2.svg"
+          },
+          {
+            "label": "student 1",
+            "filename": "ex_021__03__student__arasaac_student-1-93320fb1.png"
+          },
+          {
+            "label": "fear",
+            "filename": "ex_021__04__feels_scared__arasaac_fear-6deebe0a.png"
+          },
+          {
+            "label": "go home",
+            "filename": "ex_021__05__go_home__sclera_go-home-1d7193f5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "write lesson [HIGH-RISK]",
           "ashamed 4 [HIGH-RISK]",
@@ -1199,32 +1342,6 @@ window.REVIEW_DATA = {
             "filename": "ex_021__what_to_do__arasaac_what-program-do-you-want-to-watch-859aeb23.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "write lesson [HIGH-RISK]",
-          "student [HIGH-RISK]",
-          "closed [HIGH-RISK]",
-          "Home [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "write lesson",
-            "filename": "ex_021__safety_lesson__sclera_write-lesson-804c7a0d.png"
-          },
-          {
-            "label": "student",
-            "filename": "ex_021__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "closed",
-            "filename": "ex_021__feels_scared__arasaac_closed-14d86f71.png"
-          },
-          {
-            "label": "Home",
-            "filename": "ex_021__go_home__noun-project_home-f1c2ea1f.svg"
-          }
-        ]
       }
     },
     {
@@ -1234,37 +1351,6 @@ window.REVIEW_DATA = {
       "position": 2,
       "sentence": "Teachers should respond quickly if a student says someone hurt them.",
       "optionA": {
-        "sequence": [
-          "teacher [HIGH-RISK]",
-          "to answer 1 [HIGH-RISK]",
-          "student [HIGH-RISK]",
-          "say goodbye sad [HIGH-RISK]",
-          "angry at someone [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "teacher",
-            "filename": "ex_022__Teachers__sclera_teacher-cc15b179.png"
-          },
-          {
-            "label": "to answer 1",
-            "filename": "ex_022__respond_quickly__arasaac_to-answer-1-ce836d2a.png"
-          },
-          {
-            "label": "student",
-            "filename": "ex_022__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "say goodbye sad",
-            "filename": "ex_022__says__sclera_say-goodbye-sad-4d822b22.png"
-          },
-          {
-            "label": "angry at someone",
-            "filename": "ex_022__someone_hurt_them__sclera_angry-at-someone-e5ae978d.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "teacher [HIGH-RISK]",
           "student [HIGH-RISK]",
@@ -1297,6 +1383,47 @@ window.REVIEW_DATA = {
           {
             "label": "help",
             "filename": "ex_022__help__arasaac_help-b0621ed4.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "listen teacher",
+          "make - do - write",
+          "right",
+          "to lift the toilet seat",
+          "student",
+          "to report",
+          "hurt"
+        ],
+        "symbols": [
+          {
+            "label": "listen teacher",
+            "filename": "ex_022__00__Teachers__sclera_listen-teacher-483a4a74.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_022__01__respond__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "right",
+            "filename": "ex_022__02__quickly__arasaac_right-baa9d42e.png"
+          },
+          {
+            "label": "to lift the toilet seat",
+            "filename": "ex_022__03__if__arasaac_to-lift-the-toilet-seat-8d07109f.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_022__04__a_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to report",
+            "filename": "ex_022__05__says__arasaac_to-report-be819723.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_022__06__someone_hurt_them__arasaac_hurt-b1abca5f.png"
           }
         ]
       }
@@ -1336,26 +1463,26 @@ window.REVIEW_DATA = {
       "optionB": {
         "sequence": [
           "emergency exit",
-          "write [HIGH-RISK]",
-          "match [HIGH-RISK]",
-          "to silence 1 [HIGH-RISK]"
+          "make - do - write",
+          "clear",
+          "fire stay calm"
         ],
         "symbols": [
           {
             "label": "emergency exit",
-            "filename": "ex_023__Emergency_procedures__arasaac_emergency-exit-4f3d87ac.png"
+            "filename": "ex_023__00__Emergency_procedures__arasaac_emergency-exit-4f3d87ac.png"
           },
           {
-            "label": "write",
-            "filename": "ex_023__explained__arasaac_write-cf0fe3f7.png"
+            "label": "make - do - write",
+            "filename": "ex_023__01__explained__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "match",
-            "filename": "ex_023__clearly__arasaac_match-10c8b16c.png"
+            "label": "clear",
+            "filename": "ex_023__02__clearly__arasaac_clear-e91b8752.png"
           },
           {
-            "label": "to silence 1",
-            "filename": "ex_023__calmly__arasaac_to-silence-1-a3d9e3b6.png"
+            "label": "fire stay calm",
+            "filename": "ex_023__03__calmly__sclera_fire-stay-calm-0fa115c6.png"
           }
         ]
       }
@@ -1367,6 +1494,37 @@ window.REVIEW_DATA = {
       "position": 4,
       "sentence": "Students should know who to tell if they feel unsafe at school.",
       "optionA": {
+        "sequence": [
+          "students oats",
+          "tell",
+          "to talk 1",
+          "in [REVIEW]",
+          "classroom 2"
+        ],
+        "symbols": [
+          {
+            "label": "students oats",
+            "filename": "ex_024__00__Students__sclera_students-oats-1da31ff6.png"
+          },
+          {
+            "label": "tell",
+            "filename": "ex_024__01__who_to_tell__arasaac_tell-ea0aa1bb.png"
+          },
+          {
+            "label": "to talk 1",
+            "filename": "ex_024__02__tell__arasaac_to-talk-1-51e9f957.png"
+          },
+          {
+            "label": "in",
+            "filename": "ex_024__03__feel_unsafe__arasaac_in-e65d5fe4.png"
+          },
+          {
+            "label": "classroom 2",
+            "filename": "ex_024__04__at_school__arasaac_classroom-2-c2995bbb.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "open [HIGH-RISK]",
           "test tell answer [HIGH-RISK]",
@@ -1389,32 +1547,6 @@ window.REVIEW_DATA = {
           {
             "label": "school",
             "filename": "ex_024__school__sclera_school-338b3d14.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "Students [HIGH-RISK]",
-          "test tell answer [HIGH-RISK]",
-          "to feel sick 1 [HIGH-RISK]",
-          "school [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "Students",
-            "filename": "ex_024__Students__noun-project_students-f5abf05f.svg"
-          },
-          {
-            "label": "test tell answer",
-            "filename": "ex_024__who_to_tell__sclera_test-tell-answer-da38f29a.png"
-          },
-          {
-            "label": "to feel sick 1",
-            "filename": "ex_024__feel_unsafe__arasaac_to-feel-sick-1-ed4e0732.png"
-          },
-          {
-            "label": "school",
-            "filename": "ex_024__at_school__sclera_school-338b3d14.png"
           }
         ]
       }
@@ -1448,22 +1580,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "national health clinic [HIGH-RISK]",
-          "safety belt touch [HIGH-RISK]",
-          "regional state 32 [HIGH-RISK]"
+          "health",
+          "body",
+          "regional state 32"
         ],
         "symbols": [
           {
-            "label": "national health clinic",
-            "filename": "ex_025__health_instruction__arasaac_national-health-clinic-27a7fc8f.png"
+            "label": "health",
+            "filename": "ex_025__00__health_instruction__arasaac_health-9ce9fd2b.png"
           },
           {
-            "label": "safety belt touch",
-            "filename": "ex_025__body-safety_rules__sclera_safety-belt-touch-fc73f591.png"
+            "label": "body",
+            "filename": "ex_025__01__body-safety_rules__arasaac_body-60984d66.png"
           },
           {
             "label": "regional state 32",
-            "filename": "ex_025__stated_clearly__arasaac_regional-state-32-4cae67ec.png"
+            "filename": "ex_025__02__stated_clearly__arasaac_regional-state-32-4cae67ec.png"
           }
         ]
       }
@@ -1475,6 +1607,37 @@ window.REVIEW_DATA = {
       "position": 6,
       "sentence": "A student should never be forced to talk about private body issues in front of peers.",
       "optionA": {
+        "sequence": [
+          "student",
+          "never hurt",
+          "talk",
+          "private",
+          "in front"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_026__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "never hurt",
+            "filename": "ex_026__01__never__sclera_never-hurt-5c4d5df4.png"
+          },
+          {
+            "label": "talk",
+            "filename": "ex_026__02__be_forced_to_talk__arasaac_talc-91939f78.png"
+          },
+          {
+            "label": "private",
+            "filename": "ex_026__03__private_body_issues__arasaac_private-a905dc53.png"
+          },
+          {
+            "label": "in front",
+            "filename": "ex_026__04__in_front_of_peers__mulberry_in-front-17d60a65.svg"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "language do not understand [HIGH-RISK]",
@@ -1502,37 +1665,6 @@ window.REVIEW_DATA = {
           {
             "label": "peers/classmates",
             "filename": ""
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "do not lie [HIGH-RISK]",
-          "talk [HIGH-RISK]",
-          "private [HIGH-RISK]",
-          "front body [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_026__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "do not lie",
-            "filename": "ex_026__never_be_forced__sclera_do-not-lie-04d1741c.png"
-          },
-          {
-            "label": "talk",
-            "filename": "ex_026__to_talk__arasaac_talk-75bc3822.png"
-          },
-          {
-            "label": "private",
-            "filename": "ex_026__private_body_issues__arasaac_private-a905dc53.png"
-          },
-          {
-            "label": "front body",
-            "filename": "ex_026__in_front_of_peers__arasaac_front-body-3085f34d.png"
           }
         ]
       }
@@ -1566,17 +1698,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "clips [HIGH-RISK]",
-          "adult [HIGH-RISK]"
+          "wash private parts",
+          "must stay together",
+          "respect",
+          "adult"
         ],
         "symbols": [
           {
-            "label": "clips",
-            "filename": "ex_027__Sensitive_anatomy_instruction__arasaac_clips-0d369586.png"
+            "label": "wash private parts",
+            "filename": "ex_027__00__Sensitive_anatomy_instruction__sclera_wash-private-parts-c9a49253.png"
+          },
+          {
+            "label": "must stay together",
+            "filename": "ex_027__01__should_be_paired_with__sclera_must-stay-together-405d27bb.png"
+          },
+          {
+            "label": "respect",
+            "filename": "ex_027__02__respectful__arasaac_respect-4f1d01fb.png"
           },
           {
             "label": "adult",
-            "filename": "ex_027__respectful_adult_supervision__arasaac_adult-82a736ae.png"
+            "filename": "ex_027__03__adult_supervision__arasaac_adult-82a736ae.png"
           }
         ]
       }
@@ -1588,27 +1730,6 @@ window.REVIEW_DATA = {
       "position": 8,
       "sentence": "Lessons about consent should explain safe and unsafe touch.",
       "optionA": {
-        "sequence": [
-          "[consent]",
-          "to touch [HIGH-RISK]",
-          "touch unwanted [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "consent",
-            "filename": ""
-          },
-          {
-            "label": "to touch",
-            "filename": "ex_028__safe_touch__arasaac_to-touch-65e27952.png"
-          },
-          {
-            "label": "touch unwanted",
-            "filename": "ex_028__unsafe_touch__sclera_touch-unwanted-c3cb80c8.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "[consent]",
           "don't touch! [HIGH-RISK]",
@@ -1626,6 +1747,37 @@ window.REVIEW_DATA = {
           {
             "label": "don't touch!",
             "filename": "ex_028__unsafe_touch__arasaac_don-t-touch-0e844b2a.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "Language lessons",
+          "consent",
+          "make - do - write",
+          "touch",
+          "touch [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "Language lessons",
+            "filename": "ex_028__00__Lessons__arasaac_language-lessons-e958c4aa.png"
+          },
+          {
+            "label": "consent",
+            "filename": "ex_028__01__consent__arasaac_consent-0fa9d71b.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_028__02__should_explain__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "touch",
+            "filename": "ex_028__03__safe_touch__arasaac_touch-1e7f9296.png"
+          },
+          {
+            "label": "touch",
+            "filename": "ex_028__04__unsafe_touch__arasaac_touch-1e7f9296.png"
           }
         ]
       }
@@ -1654,17 +1806,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "can i help you",
-          "feelings 5 [HIGH-RISK]"
+          "students oats",
+          "Learn (M)",
+          "ask for help",
+          "right or wrong"
         ],
         "symbols": [
           {
-            "label": "can i help you",
-            "filename": "ex_029__ask_for_help__arasaac_can-i-help-you-e352c11e.png"
+            "label": "students oats",
+            "filename": "ex_029__00__Students__sclera_students-oats-1da31ff6.png"
           },
           {
-            "label": "feelings 5",
-            "filename": "ex_029__something_feels_wrong__sclera_feelings-5-758f8932.png"
+            "label": "Learn (M)",
+            "filename": "ex_029__01__learn__tawasol_learn-m-baaecb36.png"
+          },
+          {
+            "label": "ask for help",
+            "filename": "ex_029__02__ask_for_help__sclera_ask-for-help-0bde6154.png"
+          },
+          {
+            "label": "right or wrong",
+            "filename": "ex_029__03__something_feels_wrong__arasaac_right-or-wrong-11737115.png"
           }
         ]
       }
@@ -1677,17 +1839,37 @@ window.REVIEW_DATA = {
       "sentence": "A classroom safety plan should include what to do when someone is injured.",
       "optionA": {
         "sequence": [
-          "classroom help round",
-          "Person"
+          "classroom",
+          "safety boxes",
+          "make - do - write",
+          "instructions not understood",
+          "injury",
+          "injury"
         ],
         "symbols": [
           {
-            "label": "classroom help round",
-            "filename": "ex_030__classroom_safety_plan__sclera_classroom-help-round-ebe871a5.png"
+            "label": "classroom",
+            "filename": "ex_030__00__classroom__arasaac_classroom-e19f5893.png"
           },
           {
-            "label": "Person",
-            "filename": "ex_030__someone_is_injured__noun-project_person-ad7563ce.svg"
+            "label": "safety boxes",
+            "filename": "ex_030__01__safety_plan__arasaac_safety-boxes-39d1eb17.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_030__02__include__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "instructions not understood",
+            "filename": "ex_030__03__what_to_do__sclera_instructions-not-understood-09dbd0be.png"
+          },
+          {
+            "label": "injury",
+            "filename": "ex_030__04__when_someone_is_injured__arasaac_injury-8f869fd6.png"
+          },
+          {
+            "label": "injury",
+            "filename": "ex_030__05__injured__arasaac_injury-8f869fd6.png"
           }
         ]
       },
@@ -1721,6 +1903,32 @@ window.REVIEW_DATA = {
       "sentence": "If a student says they want to hurt themselves, get help immediately.",
       "optionA": {
         "sequence": [
+          "student",
+          "hurt",
+          "ask for help",
+          "follow game rules 1"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_031__00__a_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_031__01__want_to_hurt_themselves__arasaac_hurt-b1abca5f.png"
+          },
+          {
+            "label": "ask for help",
+            "filename": "ex_031__02__get_help__sclera_ask-for-help-0bde6154.png"
+          },
+          {
+            "label": "follow game rules 1",
+            "filename": "ex_031__03__immediately__sclera_follow-game-rules-1-1d448cd0.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "student [HIGH-RISK]",
           "self - steem [HIGH-RISK]",
           "seek help [HIGH-RISK]",
@@ -1744,37 +1952,6 @@ window.REVIEW_DATA = {
             "filename": "ex_031__immediately__arasaac_to-come-near-56d14458.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "say goodbye sad [HIGH-RISK]",
-          "self-image strong [HIGH-RISK]",
-          "seek help [HIGH-RISK]",
-          "date [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_031__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "say goodbye sad",
-            "filename": "ex_031__says__sclera_say-goodbye-sad-4d822b22.png"
-          },
-          {
-            "label": "self-image strong",
-            "filename": "ex_031__they_want_to_hurt_themselves__sclera_self-image-strong-8e27e2d9.png"
-          },
-          {
-            "label": "seek help",
-            "filename": "ex_031__get_help__sclera_seek-help-50aee3a1.png"
-          },
-          {
-            "label": "date",
-            "filename": "ex_031__immediately__arasaac_date-0f370593.png"
-          }
-        ]
       }
     },
     {
@@ -1784,32 +1961,6 @@ window.REVIEW_DATA = {
       "position": 2,
       "sentence": "If a student says they want to hurt another person, do not leave them alone.",
       "optionA": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "say goodbye sad [HIGH-RISK]",
-          "touch another [HIGH-RISK]",
-          "do not lie [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_032__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "say goodbye sad",
-            "filename": "ex_032__says__sclera_say-goodbye-sad-4d822b22.png"
-          },
-          {
-            "label": "touch another",
-            "filename": "ex_032__hurt_another_person__sclera_touch-another-95f19c49.png"
-          },
-          {
-            "label": "do not lie",
-            "filename": "ex_032__do_not_leave_them_alone__sclera_do-not-lie-04d1741c.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "angry at someone [HIGH-RISK]",
@@ -1827,6 +1978,47 @@ window.REVIEW_DATA = {
           {
             "label": "Student",
             "filename": "ex_032__stay_with_student__noun-project_student-6a34281e.svg"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "Want (M)",
+          "hurt",
+          "old person 1",
+          "do not touch",
+          "leave me alone",
+          "leave me alone"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_032__00__a_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "Want (M)",
+            "filename": "ex_032__01__want__tawasol_want-m-f341cef3.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_032__02__hurt__arasaac_hurt-b1abca5f.png"
+          },
+          {
+            "label": "old person 1",
+            "filename": "ex_032__03__another_person__arasaac_old-person-1-a490fe45.png"
+          },
+          {
+            "label": "do not touch",
+            "filename": "ex_032__04__do_not__arasaac_do-not-touch-19d9aaff.png"
+          },
+          {
+            "label": "leave me alone",
+            "filename": "ex_032__05__leave__arasaac_leave-me-alone-4fab568e.png"
+          },
+          {
+            "label": "leave me alone",
+            "filename": "ex_032__06__alone__arasaac_leave-me-alone-4fab568e.png"
           }
         ]
       }
@@ -1865,22 +2057,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "teacher [HIGH-RISK]",
-          "harm [HIGH-RISK]",
-          "call [HIGH-RISK]"
+          "listen teacher",
+          "make - do - write",
+          "harm [REVIEW]",
+          "I 4"
         ],
         "symbols": [
           {
-            "label": "teacher",
-            "filename": "ex_033__teacher__sclera_teacher-cc15b179.png"
+            "label": "listen teacher",
+            "filename": "ex_033__00__teacher__sclera_listen-teacher-483a4a74.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_033__01__treat__arasaac_make-do-write-9f433bcc.png"
           },
           {
             "label": "harm",
-            "filename": "ex_033__threat_of_serious_harm__arasaac_harm-c8b1ff43.png"
+            "filename": "ex_033__02__threat_of_serious_harm__arasaac_harm-c8b1ff43.png"
           },
           {
-            "label": "call",
-            "filename": "ex_033__urgent__arasaac_call-8b66d480.png"
+            "label": "I 4",
+            "filename": "ex_033__03__urgent__arasaac_i-4-71fca25e.png"
           }
         ]
       }
@@ -1919,32 +2116,42 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "break [HIGH-RISK]",
-          "address book [HIGH-RISK]"
+          "different",
+          "student",
+          "medical reports",
+          "to repeat",
+          "danger 1 [REVIEW]",
+          "what is your address",
+          "follow game rules 1"
         ],
         "symbols": [
           {
+            "label": "different",
+            "filename": "ex_034__00__If__arasaac_different-0758757c.png"
+          },
+          {
             "label": "student",
-            "filename": "ex_034__a_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_034__01__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_034__reports__arasaac_medical-report-2fdebf2e.png"
+            "label": "medical reports",
+            "filename": "ex_034__02__reports__arasaac_medical-reports-a677d30a.png"
           },
           {
-            "label": "counselor",
-            "filename": "ex_034__bullying__arasaac_counselor-a83435d6.png"
+            "label": "to repeat",
+            "filename": "ex_034__03__bullying__arasaac_to-repeat-3e4e231e.png"
           },
           {
-            "label": "break",
-            "filename": "ex_034__threats__arasaac_break-e698bdaf.png"
+            "label": "danger 1",
+            "filename": "ex_034__04__with_threats__arasaac_danger-1-a9cad6ac.png"
           },
           {
-            "label": "address book",
-            "filename": "ex_034__addressed_immediately__icomoon_address-book-6e6ed26f.svg"
+            "label": "what is your address",
+            "filename": "ex_034__05__should_be_addressed__arasaac_what-is-your-address-3fbe926c.png"
+          },
+          {
+            "label": "follow game rules 1",
+            "filename": "ex_034__06__immediately__sclera_follow-game-rules-1-1d448cd0.png"
           }
         ]
       }
@@ -1957,22 +2164,27 @@ window.REVIEW_DATA = {
       "sentence": "If a weapon is mentioned, school safety procedures should begin at once.",
       "optionA": {
         "sequence": [
-          "General [HIGH-RISK]",
-          "fire station [HIGH-RISK]",
-          "wait 1 [HIGH-RISK]"
+          "weapon",
+          "school",
+          "computer start",
+          "Once upon a time"
         ],
         "symbols": [
           {
-            "label": "General",
-            "filename": "ex_035__weapon__noun-project_general-2e187887.svg"
+            "label": "weapon",
+            "filename": "ex_035__00__If_a_weapon_is_mentioned__arasaac_weapon-8b7b2164.png"
           },
           {
-            "label": "fire station",
-            "filename": "ex_035__school_safety_procedures__arasaac_fire-station-4d0e2a2e.png"
+            "label": "school",
+            "filename": "ex_035__01__school_safety_procedures__arasaac_school-338b3d14.png"
           },
           {
-            "label": "wait 1",
-            "filename": "ex_035__begin_at_once__arasaac_wait-1-da1f6b60.png"
+            "label": "computer start",
+            "filename": "ex_035__02__begin__sclera_computer-start-b81239ea.png"
+          },
+          {
+            "label": "Once upon a time",
+            "filename": "ex_035__03__at_once__arasaac_once-upon-a-time-6b2f6398.png"
           }
         ]
       },
@@ -2037,37 +2249,42 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "safes [HIGH-RISK]",
-          "adult [HIGH-RISK]",
-          "help [HIGH-RISK]",
-          "date [HIGH-RISK]"
+          "different",
+          "student 1",
+          "medical reports",
+          "sexual relation [REVIEW]",
+          "adult",
+          "make - do - write",
+          "follow game rules 1"
         ],
         "symbols": [
           {
-            "label": "student",
-            "filename": "ex_036__a_student__arasaac_student-5105e1a9.png"
+            "label": "different",
+            "filename": "ex_036__00__If__arasaac_different-0758757c.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_036__reports__arasaac_medical-report-2fdebf2e.png"
+            "label": "student 1",
+            "filename": "ex_036__01__student__arasaac_student-1-93320fb1.png"
           },
           {
-            "label": "safes",
-            "filename": "ex_036__online_sexual_messages__arasaac_safes-929f2d65.png"
+            "label": "medical reports",
+            "filename": "ex_036__02__reports__arasaac_medical-reports-a677d30a.png"
+          },
+          {
+            "label": "sexual relation",
+            "filename": "ex_036__03__online_sexual_messages__arasaac_sexual-relation-a0104663.png"
           },
           {
             "label": "adult",
-            "filename": "ex_036__an_adult__arasaac_adult-82a736ae.png"
+            "filename": "ex_036__04__an_adult__arasaac_adult-82a736ae.png"
           },
           {
-            "label": "help",
-            "filename": "ex_036__should_intervene__arasaac_help-b0621ed4.png"
+            "label": "make - do - write",
+            "filename": "ex_036__05__intervene__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "date",
-            "filename": "ex_036__immediately__arasaac_date-0f370593.png"
+            "label": "follow game rules 1",
+            "filename": "ex_036__06__immediately__sclera_follow-game-rules-1-1d448cd0.png"
           }
         ]
       }
@@ -2116,42 +2333,42 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "counselor [HIGH-RISK]",
-          "write [HIGH-RISK]",
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "take away 1 [HIGH-RISK]",
-          "eye [HIGH-RISK]",
-          "Home [HIGH-RISK]"
+          "counselor",
+          "informed consent",
+          "student",
+          "medical reports",
+          "sexual abuse [REVIEW]",
+          "fear",
+          "home"
         ],
         "symbols": [
           {
             "label": "counselor",
-            "filename": "ex_037__counselor__arasaac_counselor-a83435d6.png"
+            "filename": "ex_037__00__A_counselor__arasaac_counselor-a83435d6.png"
           },
           {
-            "label": "write",
-            "filename": "ex_037__should_be_informed__arasaac_write-cf0fe3f7.png"
+            "label": "informed consent",
+            "filename": "ex_037__01__should_be_informed__arasaac_informed-consent-499198f6.png"
           },
           {
             "label": "student",
-            "filename": "ex_037__student__arasaac_student-5105e1a9.png"
+            "filename": "ex_037__02__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_037__reports__arasaac_medical-report-2fdebf2e.png"
+            "label": "medical reports",
+            "filename": "ex_037__03__reports__arasaac_medical-reports-a677d30a.png"
           },
           {
-            "label": "take away 1",
-            "filename": "ex_037__abuse__arasaac_take-away-1-221e7781.png"
+            "label": "sexual abuse",
+            "filename": "ex_037__04__abuse__arasaac_sexual-abuse-1cfa316c.png"
           },
           {
-            "label": "eye",
-            "filename": "ex_037__fear__arasaac_eye-0c3b539b.png"
+            "label": "fear",
+            "filename": "ex_037__05__fear__arasaac_fear-6deebe0a.png"
           },
           {
-            "label": "Home",
-            "filename": "ex_037__at_home__noun-project_home-f1c2ea1f.svg"
+            "label": "home",
+            "filename": "ex_037__06__at_home__arasaac_home-31d8e0c4.png"
           }
         ]
       }
@@ -2164,32 +2381,37 @@ window.REVIEW_DATA = {
       "sentence": "If a student says they are not safe with a caregiver, escalate the concern immediately.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "Not Quite [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "to grow larger [HIGH-RISK]",
-          "date [HIGH-RISK]"
+          "student",
+          "safe [REVIEW]",
+          "caregiver",
+          "ask for help",
+          "do the shopping",
+          "follow game rules 1"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_038__a_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_038__00__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "Not Quite",
-            "filename": "ex_038__not_safe__noun-project_not-quite-92d37d32.svg"
+            "label": "safe",
+            "filename": "ex_038__01__not_safe__arasaac_safe-9bffe81c.png"
           },
           {
-            "label": "counselor",
-            "filename": "ex_038__a_caregiver__arasaac_counselor-a83435d6.png"
+            "label": "caregiver",
+            "filename": "ex_038__02__with_a_caregiver__sclera_caregiver-26fa64ba.png"
           },
           {
-            "label": "to grow larger",
-            "filename": "ex_038__escalate_the_concern__arasaac_to-grow-larger-7dc548cc.png"
+            "label": "ask for help",
+            "filename": "ex_038__03__escalate__sclera_ask-for-help-0bde6154.png"
           },
           {
-            "label": "date",
-            "filename": "ex_038__immediately__arasaac_date-0f370593.png"
+            "label": "do the shopping",
+            "filename": "ex_038__04__the_concern__arasaac_do-the-shopping-43a432fd.png"
+          },
+          {
+            "label": "follow game rules 1",
+            "filename": "ex_038__05__immediately__sclera_follow-game-rules-1-1d448cd0.png"
           }
         ]
       },
@@ -2229,27 +2451,6 @@ window.REVIEW_DATA = {
       "optionA": {
         "sequence": [
           "national health clinic [HIGH-RISK]",
-          "do not lie [HIGH-RISK]",
-          "or [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "national health clinic",
-            "filename": "ex_039__Sensitive_health_content__arasaac_national-health-clinic-27a7fc8f.png"
-          },
-          {
-            "label": "do not lie",
-            "filename": "ex_039__should_not_be_illustrated__sclera_do-not-lie-04d1741c.png"
-          },
-          {
-            "label": "or",
-            "filename": "ex_039__explicit_or_inappropriate_images__arasaac_or-bb8bf1d9.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "national health clinic [HIGH-RISK]",
           "no [HIGH-RISK]"
         ],
         "symbols": [
@@ -2260,6 +2461,32 @@ window.REVIEW_DATA = {
           {
             "label": "no",
             "filename": "ex_039__no_explicit_images__arasaac_no-c948bee6.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "health",
+          "do not touch",
+          "illustrated children's book series",
+          "images cube"
+        ],
+        "symbols": [
+          {
+            "label": "health",
+            "filename": "ex_039__00__Sensitive_health_content__arasaac_health-9ce9fd2b.png"
+          },
+          {
+            "label": "do not touch",
+            "filename": "ex_039__01__should_not__arasaac_do-not-touch-19d9aaff.png"
+          },
+          {
+            "label": "illustrated children's book series",
+            "filename": "ex_039__02__be_illustrated__arasaac_illustrated-children-s-book-series-dae05d82.png"
+          },
+          {
+            "label": "images cube",
+            "filename": "ex_039__03__explicit_or_inappropriate_images__arasaac_images-cube-0a74a5b7.png"
           }
         ]
       }
@@ -2293,27 +2520,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "clips [HIGH-RISK]",
-          "touch [HIGH-RISK]",
-          "[reviewed educational symbols]",
-          "[text]"
+          "reproduction",
+          "to use the communication board",
+          "education",
+          "mobile phone text message"
         ],
         "symbols": [
           {
-            "label": "clips",
-            "filename": "ex_040__reproductive_anatomy__arasaac_clips-0d369586.png"
+            "label": "reproduction",
+            "filename": "ex_040__00__When_discussing_reproductive_anatomy__arasaac_reproduction-d05f661e.png"
           },
           {
-            "label": "touch",
-            "filename": "ex_040__use__arasaac_touch-1e7f9296.png"
+            "label": "to use the communication board",
+            "filename": "ex_040__01__use__arasaac_to-use-the-communication-board-27da7d9a.png"
           },
           {
-            "label": "reviewed educational symbols",
-            "filename": ""
+            "label": "education",
+            "filename": "ex_040__02__reviewed_educational_symbols__arasaac_education-cf445814.png"
           },
           {
-            "label": "text",
-            "filename": ""
+            "label": "mobile phone text message",
+            "filename": "ex_040__03__text__mulberry_mobile-phone-text-message-ed01a75e.svg"
           }
         ]
       }
@@ -2326,17 +2553,17 @@ window.REVIEW_DATA = {
       "sentence": "I am hurt.",
       "optionA": {
         "sequence": [
-          "i",
-          "hurt"
+          "I",
+          "stomach ache"
         ],
         "symbols": [
           {
-            "label": "i",
-            "filename": "ex_041__I__sclera_i-a5e591ea.png"
+            "label": "I",
+            "filename": "ex_041__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "hurt",
-            "filename": "ex_041__hurt__arasaac_hurt-b1abca5f.png"
+            "label": "stomach ache",
+            "filename": "ex_041__01__hurt__arasaac_stomach-ache-6c18deca.png"
           }
         ]
       },
@@ -2365,14 +2592,9 @@ window.REVIEW_DATA = {
       "sentence": "I am bleeding.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
           "break [HIGH-RISK]"
         ],
         "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_042__I__sclera_i-a5e591ea.png"
-          },
           {
             "label": "break",
             "filename": "ex_042__bleeding__arasaac_break-e698bdaf.png"
@@ -2381,12 +2603,17 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "break [HIGH-RISK]"
+          "I",
+          "blood"
         ],
         "symbols": [
           {
-            "label": "break",
-            "filename": "ex_042__bleeding__arasaac_break-e698bdaf.png"
+            "label": "I",
+            "filename": "ex_042__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "blood",
+            "filename": "ex_042__01__bleeding__arasaac_blood-51435481.png"
           }
         ]
       }
@@ -2398,6 +2625,32 @@ window.REVIEW_DATA = {
       "position": 3,
       "sentence": "I need the nurse now.",
       "optionA": {
+        "sequence": [
+          "I",
+          "I need help",
+          "nurse",
+          "now 1"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_043__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "I need help",
+            "filename": "ex_043__01__need__arasaac_i-need-help-9a0f6fde.png"
+          },
+          {
+            "label": "nurse",
+            "filename": "ex_043__02__the_nurse__arasaac_nurse-abafa8ce.png"
+          },
+          {
+            "label": "now 1",
+            "filename": "ex_043__03__now__arasaac_now-1-f7e31dd5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "Nurse",
           "now"
@@ -2412,27 +2665,6 @@ window.REVIEW_DATA = {
             "filename": "ex_043__now__arasaac_now-4e0f0aae.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "need toilet",
-          "Nurse",
-          "now"
-        ],
-        "symbols": [
-          {
-            "label": "need toilet",
-            "filename": "ex_043__I_need__mulberry_need-toilet-cf5dbd04.svg"
-          },
-          {
-            "label": "Nurse",
-            "filename": "ex_043__the_nurse__noun-project_nurse-53b27dbe.svg"
-          },
-          {
-            "label": "now",
-            "filename": "ex_043__now__sclera_now-4e0f0aae.png"
-          }
-        ]
       }
     },
     {
@@ -2443,17 +2675,22 @@ window.REVIEW_DATA = {
       "sentence": "Someone hit me.",
       "optionA": {
         "sequence": [
-          "angry at someone [HIGH-RISK]",
-          "me neither! [HIGH-RISK]"
+          "angry at someone",
+          "hitting pad",
+          "employment counselor"
         ],
         "symbols": [
           {
             "label": "angry at someone",
-            "filename": "ex_044__Someone__sclera_angry-at-someone-e5ae978d.png"
+            "filename": "ex_044__00__Someone__sclera_angry-at-someone-e5ae978d.png"
           },
           {
-            "label": "me neither!",
-            "filename": "ex_044__hit_me__arasaac_me-neither-98d529e6.png"
+            "label": "hitting pad",
+            "filename": "ex_044__01__hit__sclera_hitting-pad-77850cf4.png"
+          },
+          {
+            "label": "employment counselor",
+            "filename": "ex_044__02__me__arasaac_employment-counselor-4bffc2b5.png"
           }
         ]
       },
@@ -2487,17 +2724,17 @@ window.REVIEW_DATA = {
       "sentence": "I am not safe.",
       "optionA": {
         "sequence": [
-          "self-image strong [HIGH-RISK]",
-          "safe [HIGH-RISK]"
+          "I",
+          "safe [REVIEW]"
         ],
         "symbols": [
           {
-            "label": "self-image strong",
-            "filename": "ex_045__I__sclera_self-image-strong-8e27e2d9.png"
+            "label": "I",
+            "filename": "ex_045__00__I__arasaac_i-69ca1b97.png"
           },
           {
             "label": "safe",
-            "filename": "ex_045__not_safe__arasaac_safe-9bffe81c.png"
+            "filename": "ex_045__01__not_safe__arasaac_safe-9bffe81c.png"
           }
         ]
       },
@@ -2526,17 +2763,27 @@ window.REVIEW_DATA = {
       "sentence": "I need help now.",
       "optionA": {
         "sequence": [
-          "help",
-          "now"
+          "I watch myself",
+          "I need help",
+          "help 4",
+          "now 1"
         ],
         "symbols": [
           {
-            "label": "help",
-            "filename": "ex_046__help__arasaac_help-b0621ed4.png"
+            "label": "I watch myself",
+            "filename": "ex_046__00__I__sclera_i-watch-myself-c4f74d3e.png"
           },
           {
-            "label": "now",
-            "filename": "ex_046__now__sclera_now-4e0f0aae.png"
+            "label": "I need help",
+            "filename": "ex_046__01__need__arasaac_i-need-help-9a0f6fde.png"
+          },
+          {
+            "label": "help 4",
+            "filename": "ex_046__02__help__arasaac_help-4-cdec7a8b.png"
+          },
+          {
+            "label": "now 1",
+            "filename": "ex_046__03__now__arasaac_now-1-f7e31dd5.png"
           }
         ]
       },
@@ -2565,27 +2812,27 @@ window.REVIEW_DATA = {
       "sentence": "Do not touch me there.",
       "optionA": {
         "sequence": [
-          "do not lie [HIGH-RISK]",
-          "touch unwanted [HIGH-RISK]",
-          "me neither! [HIGH-RISK]",
-          "Who's there [HIGH-RISK]"
+          "do not touch",
+          "do magic",
+          "obtenir le message",
+          "parts"
         ],
         "symbols": [
           {
-            "label": "do not lie",
-            "filename": "ex_047__Do_not__sclera_do-not-lie-04d1741c.png"
+            "label": "do not touch",
+            "filename": "ex_047__00__Do_not__arasaac_do-not-touch-19d9aaff.png"
           },
           {
-            "label": "touch unwanted",
-            "filename": "ex_047__touch__sclera_touch-unwanted-c3cb80c8.png"
+            "label": "do magic",
+            "filename": "ex_047__01__touch__arasaac_do-magic-05f6fac4.png"
           },
           {
-            "label": "me neither!",
-            "filename": "ex_047__me__arasaac_me-neither-98d529e6.png"
+            "label": "obtenir le message",
+            "filename": "ex_047__02__me__arasaac_get-the-post-9f0db8ed.png"
           },
           {
-            "label": "Who's there",
-            "filename": "ex_047__there__arasaac_who-s-there-634c77b8.png"
+            "label": "parts",
+            "filename": "ex_047__03__there__arasaac_parts-db64c4dd.png"
           }
         ]
       },
@@ -2624,27 +2871,6 @@ window.REVIEW_DATA = {
       "sentence": "My private parts hurt.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "neck [HIGH-RISK]",
-          "pain [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_048__My__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "neck",
-            "filename": "ex_048__private_parts__arasaac_neck-d2dcef7a.png"
-          },
-          {
-            "label": "pain",
-            "filename": "ex_048__hurt__sclera_pain-8ec000a8.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "private [HIGH-RISK]",
           "pain [HIGH-RISK]"
         ],
@@ -2658,6 +2884,27 @@ window.REVIEW_DATA = {
             "filename": "ex_048__pain__sclera_pain-8ec000a8.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "I",
+          "genitals",
+          "abdominal pain"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_048__00__My__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "genitals",
+            "filename": "ex_048__01__private_parts__sclera_genitals-0fe4dd98.png"
+          },
+          {
+            "label": "abdominal pain",
+            "filename": "ex_048__02__hurt__sclera_abdominal-pain-2c053d98.png"
+          }
+        ]
       }
     },
     {
@@ -2667,6 +2914,32 @@ window.REVIEW_DATA = {
       "position": 9,
       "sentence": "I am scared to go home.",
       "optionA": {
+        "sequence": [
+          "I",
+          "fear",
+          "to go",
+          "go home"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_049__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "fear",
+            "filename": "ex_049__01__scared__arasaac_fear-6deebe0a.png"
+          },
+          {
+            "label": "to go",
+            "filename": "ex_049__02__go__arasaac_to-go-594b8558.png"
+          },
+          {
+            "label": "go home",
+            "filename": "ex_049__03__home__sclera_go-home-1d7193f5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "ashamed 4 [HIGH-RISK]",
           "Home [HIGH-RISK]"
@@ -2679,27 +2952,6 @@ window.REVIEW_DATA = {
           {
             "label": "Home",
             "filename": "ex_049__home__noun-project_home-f1c2ea1f.svg"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "i [HIGH-RISK]",
-          "sad [HIGH-RISK]",
-          "to reside 1 [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_049__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "sad",
-            "filename": "ex_049__scared__arasaac_sad-b46deac4.png"
-          },
-          {
-            "label": "to reside 1",
-            "filename": "ex_049__go_home__arasaac_to-reside-1-1112058a.png"
           }
         ]
       }
@@ -2733,22 +2985,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "angry at someone [HIGH-RISK]",
-          "touch [HIGH-RISK]",
-          "me neither! [HIGH-RISK]"
+          "unknown",
+          "intimate touching",
+          "employment counselor"
         ],
         "symbols": [
           {
-            "label": "angry at someone",
-            "filename": "ex_050__Someone__sclera_angry-at-someone-e5ae978d.png"
+            "label": "unknown",
+            "filename": "ex_050__00__Someone__arasaac_unknown-6250c08a.png"
           },
           {
-            "label": "touch",
-            "filename": "ex_050__touched__arasaac_touch-1e7f9296.png"
+            "label": "intimate touching",
+            "filename": "ex_050__01__touched__sclera_intimate-touching-c8b10f6d.png"
           },
           {
-            "label": "me neither!",
-            "filename": "ex_050__me__arasaac_me-neither-98d529e6.png"
+            "label": "employment counselor",
+            "filename": "ex_050__02__me__arasaac_employment-counselor-4bffc2b5.png"
           }
         ]
       }
@@ -2760,27 +3012,6 @@ window.REVIEW_DATA = {
       "position": 1,
       "sentence": "I need a safe adult.",
       "optionA": {
-        "sequence": [
-          "i [HIGH-RISK]",
-          "need toilet [HIGH-RISK]",
-          "adult [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_051__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "need toilet",
-            "filename": "ex_051__need__mulberry_need-toilet-cf5dbd04.svg"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_051__a_safe_adult__arasaac_adult-82a736ae.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "adults 1 [HIGH-RISK]",
           "help [HIGH-RISK]"
@@ -2795,6 +3026,27 @@ window.REVIEW_DATA = {
             "filename": "ex_051__help__arasaac_help-b0621ed4.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "I",
+          "I need help",
+          "unknown"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_051__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "I need help",
+            "filename": "ex_051__01__need__arasaac_i-need-help-9a0f6fde.png"
+          },
+          {
+            "label": "unknown",
+            "filename": "ex_051__02__a_safe_adult__arasaac_unknown-6250c08a.png"
+          }
+        ]
       }
     },
     {
@@ -2804,6 +3056,27 @@ window.REVIEW_DATA = {
       "position": 2,
       "sentence": "I want the counselor.",
       "optionA": {
+        "sequence": [
+          "I watch myself",
+          "wish for - want",
+          "counselor"
+        ],
+        "symbols": [
+          {
+            "label": "I watch myself",
+            "filename": "ex_052__00__I__sclera_i-watch-myself-c4f74d3e.png"
+          },
+          {
+            "label": "wish for - want",
+            "filename": "ex_052__01__want__arasaac_wish-for-want-1d5c24ad.png"
+          },
+          {
+            "label": "counselor",
+            "filename": "ex_052__02__the_counselor__arasaac_counselor-a83435d6.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "counsellor (female) [HIGH-RISK]",
           "to want"
@@ -2818,27 +3091,6 @@ window.REVIEW_DATA = {
             "filename": "ex_052__want__arasaac_to-want-2ee1c9fc.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "i",
-          "to want",
-          "counselor"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_052__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "to want",
-            "filename": "ex_052__want__arasaac_to-want-2ee1c9fc.png"
-          },
-          {
-            "label": "counselor",
-            "filename": "ex_052__the_counselor__arasaac_counselor-a83435d6.png"
-          }
-        ]
       }
     },
     {
@@ -2849,17 +3101,17 @@ window.REVIEW_DATA = {
       "sentence": "I cannot breathe well.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "burn [HIGH-RISK]"
+          "I watch myself",
+          "to breathe"
         ],
         "symbols": [
           {
-            "label": "i",
-            "filename": "ex_053__I__sclera_i-a5e591ea.png"
+            "label": "I watch myself",
+            "filename": "ex_053__00__I__sclera_i-watch-myself-c4f74d3e.png"
           },
           {
-            "label": "burn",
-            "filename": "ex_053__cannot_breathe_well__arasaac_burn-ad9248b4.png"
+            "label": "to breathe",
+            "filename": "ex_053__01__cannot_breathe_well__arasaac_to-breathe-17f14d2b.png"
           }
         ]
       },
@@ -2899,22 +3151,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "happy 2 [HIGH-RISK]",
-          "medicine chest",
-          "hurt"
+          "I",
+          "wash private parts",
+          "stomach ache"
         ],
         "symbols": [
           {
-            "label": "happy 2",
-            "filename": "ex_054__My__arasaac_happy-2-adf0bc3b.png"
+            "label": "I",
+            "filename": "ex_054__00__My__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "medicine chest",
-            "filename": "ex_054__chest__arasaac_medicine-chest-fe5f9eeb.png"
+            "label": "wash private parts",
+            "filename": "ex_054__01__chest__sclera_wash-private-parts-c9a49253.png"
           },
           {
-            "label": "hurt",
-            "filename": "ex_054__hurts__arasaac_hurt-b1abca5f.png"
+            "label": "stomach ache",
+            "filename": "ex_054__02__hurts__mulberry_stomach-ache-7b5a1473.svg"
           }
         ]
       }
@@ -2927,22 +3179,32 @@ window.REVIEW_DATA = {
       "sentence": "My head hurts after I fell.",
       "optionA": {
         "sequence": [
-          "head [HIGH-RISK]",
-          "pain [HIGH-RISK]",
-          "fall [HIGH-RISK]"
+          "I",
+          "head",
+          "stomach ache",
+          "fall",
+          "wash hands after going to the toilet"
         ],
         "symbols": [
           {
-            "label": "head",
-            "filename": "ex_055__head__sclera_head-f713f712.png"
+            "label": "I",
+            "filename": "ex_055__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "pain",
-            "filename": "ex_055__hurts__sclera_pain-8ec000a8.png"
+            "label": "head",
+            "filename": "ex_055__01__head__arasaac_head-f713f712.png"
+          },
+          {
+            "label": "stomach ache",
+            "filename": "ex_055__02__hurts__mulberry_stomach-ache-7b5a1473.svg"
           },
           {
             "label": "fall",
-            "filename": "ex_055__fell__arasaac_fall-15e4660a.png"
+            "filename": "ex_055__03__fell__arasaac_fall-15e4660a.png"
+          },
+          {
+            "label": "wash hands after going to the toilet",
+            "filename": "ex_055__04__after__sclera_wash-hands-after-going-to-the-toilet-a9f4e95a.png"
           }
         ]
       },
@@ -2976,28 +3238,33 @@ window.REVIEW_DATA = {
       "sentence": "I think I am in danger.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "break [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_056__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "break",
-            "filename": "ex_056__in_danger__arasaac_break-e698bdaf.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "break [HIGH-RISK]"
         ],
         "symbols": [
           {
             "label": "break",
             "filename": "ex_056__danger__arasaac_break-e698bdaf.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "I",
+          "thinking positive",
+          "in [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_056__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "thinking positive",
+            "filename": "ex_056__01__think__sclera_thinking-positive-32801d16.png"
+          },
+          {
+            "label": "in",
+            "filename": "ex_056__02__in_danger__arasaac_in-e65d5fe4.png"
           }
         ]
       }
@@ -3026,22 +3293,32 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "to feel sick 1 [HIGH-RISK]",
-          "Person [HIGH-RISK]"
+          "I",
+          "to feel sick",
+          "safe [REVIEW]",
+          "with him",
+          "person 3"
         ],
         "symbols": [
           {
-            "label": "i",
-            "filename": "ex_057__I__sclera_i-a5e591ea.png"
+            "label": "I",
+            "filename": "ex_057__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "to feel sick 1",
-            "filename": "ex_057__feel_unsafe__arasaac_to-feel-sick-1-ed4e0732.png"
+            "label": "to feel sick",
+            "filename": "ex_057__01__feel__arasaac_to-feel-sick-ed3cd4cd.png"
           },
           {
-            "label": "Person",
-            "filename": "ex_057__that_person__noun-project_person-ad7563ce.svg"
+            "label": "safe",
+            "filename": "ex_057__02__unsafe__arasaac_safe-9bffe81c.png"
+          },
+          {
+            "label": "with him",
+            "filename": "ex_057__03__with__arasaac_with-him-997c10ff.png"
+          },
+          {
+            "label": "person 3",
+            "filename": "ex_057__04__that_person__arasaac_person-3-55e31a69.png"
           }
         ]
       }
@@ -3053,6 +3330,32 @@ window.REVIEW_DATA = {
       "position": 8,
       "sentence": "I need to leave this room now.",
       "optionA": {
+        "sequence": [
+          "I",
+          "leave",
+          "room",
+          "now 1"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_058__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "leave",
+            "filename": "ex_058__01__leave__tawasol_leave-b2fc3926.jpg"
+          },
+          {
+            "label": "room",
+            "filename": "ex_058__02__this_room__mulberry_room-da778f44.svg"
+          },
+          {
+            "label": "now 1",
+            "filename": "ex_058__03__now__arasaac_now-1-f7e31dd5.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "wait [HIGH-RISK]",
           "art room",
@@ -3072,37 +3375,6 @@ window.REVIEW_DATA = {
             "filename": "ex_058__now__arasaac_now-4e0f0aae.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "i",
-          "need toilet",
-          "break",
-          "art room",
-          "now"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_058__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "need toilet",
-            "filename": "ex_058__need__mulberry_need-toilet-cf5dbd04.svg"
-          },
-          {
-            "label": "break",
-            "filename": "ex_058__leave__arasaac_break-e698bdaf.png"
-          },
-          {
-            "label": "art room",
-            "filename": "ex_058__this_room__mulberry_art-room-69bb1611.svg"
-          },
-          {
-            "label": "now",
-            "filename": "ex_058__now__sclera_now-4e0f0aae.png"
-          }
-        ]
       }
     },
     {
@@ -3113,27 +3385,27 @@ window.REVIEW_DATA = {
       "sentence": "Someone is threatening me online.",
       "optionA": {
         "sequence": [
-          "angry at someone [HIGH-RISK]",
-          "to make angry 2 [HIGH-RISK]",
-          "self-image strong [HIGH-RISK]",
-          "open [HIGH-RISK]"
+          "unknown",
+          "danger [REVIEW]",
+          "employment counselor",
+          "computer online shopping"
         ],
         "symbols": [
           {
-            "label": "angry at someone",
-            "filename": "ex_059__Someone__sclera_angry-at-someone-e5ae978d.png"
+            "label": "unknown",
+            "filename": "ex_059__00__Someone__arasaac_unknown-6250c08a.png"
           },
           {
-            "label": "to make angry 2",
-            "filename": "ex_059__is_threatening__arasaac_to-make-angry-2-b9b7f771.png"
+            "label": "danger",
+            "filename": "ex_059__01__is_threatening__arasaac_danger-9b2cc73b.png"
           },
           {
-            "label": "self-image strong",
-            "filename": "ex_059__me__sclera_self-image-strong-8e27e2d9.png"
+            "label": "employment counselor",
+            "filename": "ex_059__02__me__arasaac_employment-counselor-4bffc2b5.png"
           },
           {
-            "label": "open",
-            "filename": "ex_059__online__arasaac_open-78bb034a.png"
+            "label": "computer online shopping",
+            "filename": "ex_059__03__online__sclera_computer-online-shopping-ac2c7b15.png"
           }
         ]
       },
@@ -3162,27 +3434,6 @@ window.REVIEW_DATA = {
       "sentence": "I saw a weapon.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "to see 2 [HIGH-RISK]",
-          "General [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_060__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "to see 2",
-            "filename": "ex_060__saw__arasaac_to-see-2-6be421d8.png"
-          },
-          {
-            "label": "General",
-            "filename": "ex_060__a_weapon__noun-project_general-2e187887.svg"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "to see 2 [HIGH-RISK]",
           "body [HIGH-RISK]"
         ],
@@ -3196,6 +3447,27 @@ window.REVIEW_DATA = {
             "filename": "ex_060__weapon__arasaac_body-60984d66.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "I",
+          "to saw",
+          "weapon"
+        ],
+        "symbols": [
+          {
+            "label": "I",
+            "filename": "ex_060__00__I__arasaac_i-69ca1b97.png"
+          },
+          {
+            "label": "to saw",
+            "filename": "ex_060__01__saw__arasaac_to-saw-442087e3.png"
+          },
+          {
+            "label": "weapon",
+            "filename": "ex_060__02__a_weapon__arasaac_weapon-8b7b2164.png"
+          }
+        ]
       }
     },
     {
@@ -3206,22 +3478,22 @@ window.REVIEW_DATA = {
       "sentence": "I want to hurt myself.",
       "optionA": {
         "sequence": [
-          "i [HIGH-RISK]",
-          "to want [HIGH-RISK]",
-          "hurt oneself [HIGH-RISK]"
+          "I",
+          "wish for - want",
+          "hurt [REVIEW]"
         ],
         "symbols": [
           {
-            "label": "i",
-            "filename": "ex_061__I__sclera_i-a5e591ea.png"
+            "label": "I",
+            "filename": "ex_061__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "to want",
-            "filename": "ex_061__want__arasaac_to-want-2ee1c9fc.png"
+            "label": "wish for - want",
+            "filename": "ex_061__01__want__arasaac_wish-for-want-1d5c24ad.png"
           },
           {
-            "label": "hurt oneself",
-            "filename": "ex_061__hurt_myself__arasaac_hurt-oneself-8c61996a.png"
+            "label": "hurt",
+            "filename": "ex_061__02__hurt_myself__arasaac_hurt-b1abca5f.png"
           }
         ]
       },
@@ -3245,6 +3517,22 @@ window.REVIEW_DATA = {
       "sentence": "I want to die.",
       "optionA": {
         "sequence": [
+          "I watch myself",
+          "to die [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "I watch myself",
+            "filename": "ex_062__00__I__sclera_i-watch-myself-c4f74d3e.png"
+          },
+          {
+            "label": "to die",
+            "filename": "ex_062__01__want_to_die__arasaac_to-die-d68c4cf9.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "to cut oneself [HIGH-RISK]",
           "help [HIGH-RISK]"
         ],
@@ -3258,27 +3546,6 @@ window.REVIEW_DATA = {
             "filename": "ex_062__help__arasaac_help-b0621ed4.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "i [HIGH-RISK]",
-          "to want [HIGH-RISK]",
-          "die (singular) dice (plural) [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "i",
-            "filename": "ex_062__I__sclera_i-a5e591ea.png"
-          },
-          {
-            "label": "to want",
-            "filename": "ex_062__want_to__arasaac_to-want-2ee1c9fc.png"
-          },
-          {
-            "label": "die (singular) dice (plural)",
-            "filename": "ex_062__die__arasaac_die-singular-dice-plural-3eee9070.png"
-          }
-        ]
       }
     },
     {
@@ -3289,17 +3556,17 @@ window.REVIEW_DATA = {
       "sentence": "My friend wants to die.",
       "optionA": {
         "sequence": [
-          "friend [HIGH-RISK]",
-          "hands [HIGH-RISK]"
+          "friend 1",
+          "to die [REVIEW]"
         ],
         "symbols": [
           {
-            "label": "friend",
-            "filename": "ex_063__My_friend__arasaac_friend-02c67213.png"
+            "label": "friend 1",
+            "filename": "ex_063__00__My_friend__arasaac_friend-1-4fd81db0.png"
           },
           {
-            "label": "hands",
-            "filename": "ex_063__wants_to_die__arasaac_hands-1e4accd2.png"
+            "label": "to die",
+            "filename": "ex_063__01__wants_to_die__arasaac_to-die-d68c4cf9.png"
           }
         ]
       },
@@ -3329,27 +3596,6 @@ window.REVIEW_DATA = {
       "optionA": {
         "sequence": [
           "friend [HIGH-RISK]",
-          "to want [HIGH-RISK]",
-          "self-image strong [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "friend",
-            "filename": "ex_064__My_friend__arasaac_friend-02c67213.png"
-          },
-          {
-            "label": "to want",
-            "filename": "ex_064__wants__arasaac_to-want-2ee1c9fc.png"
-          },
-          {
-            "label": "self-image strong",
-            "filename": "ex_064__hurt_themself__sclera_self-image-strong-8e27e2d9.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "friend [HIGH-RISK]",
           "self - steem [HIGH-RISK]"
         ],
         "symbols": [
@@ -3360,6 +3606,27 @@ window.REVIEW_DATA = {
           {
             "label": "self - steem",
             "filename": "ex_064__hurt_self__arasaac_self-steem-65e33e9e.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "friend 1",
+          "to want",
+          "hurt"
+        ],
+        "symbols": [
+          {
+            "label": "friend 1",
+            "filename": "ex_064__00__My_friend__arasaac_friend-1-4fd81db0.png"
+          },
+          {
+            "label": "to want",
+            "filename": "ex_064__01__wants_to__arasaac_to-want-2ee1c9fc.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_064__02__hurt_themself__arasaac_hurt-b1abca5f.png"
           }
         ]
       }
@@ -3388,17 +3655,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "fire stay calm 1",
-          "me neither!"
+          "please",
+          "to stay",
+          "must stay together",
+          "me 2"
         ],
         "symbols": [
           {
-            "label": "fire stay calm 1",
-            "filename": "ex_065__stay__sclera_fire-stay-calm-1-663d5ba7.png"
+            "label": "please",
+            "filename": "ex_065__00__Please__arasaac_please-d20d05bf.png"
           },
           {
-            "label": "me neither!",
-            "filename": "ex_065__me__arasaac_me-neither-98d529e6.png"
+            "label": "to stay",
+            "filename": "ex_065__01__stay__arasaac_to-stay-f8eb2a5d.png"
+          },
+          {
+            "label": "must stay together",
+            "filename": "ex_065__02__with__sclera_must-stay-together-405d27bb.png"
+          },
+          {
+            "label": "me 2",
+            "filename": "ex_065__03__me__arasaac_me-2-2168f1c1.png"
           }
         ]
       }
@@ -3411,6 +3688,17 @@ window.REVIEW_DATA = {
       "sentence": "Please call for help.",
       "optionA": {
         "sequence": [
+          "help"
+        ],
+        "symbols": [
+          {
+            "label": "help",
+            "filename": "ex_066__00__call_for_help__arasaac_help-b0621ed4.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "call [HIGH-RISK]",
           "help [HIGH-RISK]"
         ],
@@ -3418,22 +3706,6 @@ window.REVIEW_DATA = {
           {
             "label": "call",
             "filename": "ex_066__call__icon_archive_call-8b66d480.png"
-          },
-          {
-            "label": "help",
-            "filename": "ex_066__help__arasaac_help-b0621ed4.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "call",
-          "help"
-        ],
-        "symbols": [
-          {
-            "label": "call",
-            "filename": "ex_066__call__arasaac_call-8b66d480.png"
           },
           {
             "label": "help",
@@ -3450,22 +3722,27 @@ window.REVIEW_DATA = {
       "sentence": "I need privacy and support.",
       "optionA": {
         "sequence": [
-          "need toilet",
-          "break [HIGH-RISK]",
-          "support teacher"
+          "I",
+          "I need help",
+          "privacy 1",
+          "support"
         ],
         "symbols": [
           {
-            "label": "need toilet",
-            "filename": "ex_067__I_need__mulberry_need-toilet-cf5dbd04.svg"
+            "label": "I",
+            "filename": "ex_067__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "break",
-            "filename": "ex_067__privacy__arasaac_break-e698bdaf.png"
+            "label": "I need help",
+            "filename": "ex_067__01__need__arasaac_i-need-help-9a0f6fde.png"
           },
           {
-            "label": "support teacher",
-            "filename": "ex_067__support__arasaac_support-teacher-b53bcf73.png"
+            "label": "privacy 1",
+            "filename": "ex_067__02__privacy__arasaac_privacy-1-d48858f8.png"
+          },
+          {
+            "label": "support",
+            "filename": "ex_067__03__support__arasaac_support-6c196e87.png"
           }
         ]
       },
@@ -3494,22 +3771,27 @@ window.REVIEW_DATA = {
       "sentence": "I need to talk to a safe adult.",
       "optionA": {
         "sequence": [
-          "need toilet [HIGH-RISK]",
-          "talk [HIGH-RISK]",
-          "saddles 1 [HIGH-RISK]"
+          "I",
+          "I need help",
+          "to talk",
+          "unknown"
         ],
         "symbols": [
           {
-            "label": "need toilet",
-            "filename": "ex_068__need__mulberry_need-toilet-cf5dbd04.svg"
+            "label": "I",
+            "filename": "ex_068__00__I__arasaac_i-69ca1b97.png"
           },
           {
-            "label": "talk",
-            "filename": "ex_068__talk__arasaac_talk-75bc3822.png"
+            "label": "I need help",
+            "filename": "ex_068__01__need__arasaac_i-need-help-9a0f6fde.png"
           },
           {
-            "label": "saddles 1",
-            "filename": "ex_068__safe_adult__arasaac_saddles-1-056180e6.png"
+            "label": "to talk",
+            "filename": "ex_068__02__talk__arasaac_to-talk-3e224b22.png"
+          },
+          {
+            "label": "unknown",
+            "filename": "ex_068__03__safe_adult__arasaac_unknown-6250c08a.png"
           }
         ]
       },
@@ -3538,12 +3820,12 @@ window.REVIEW_DATA = {
       "sentence": "This is an emergency.",
       "optionA": {
         "sequence": [
-          "emergency exit [HIGH-RISK]"
+          "call"
         ],
         "symbols": [
           {
-            "label": "emergency exit",
-            "filename": "ex_069__emergency__arasaac_emergency-exit-4f3d87ac.png"
+            "label": "call",
+            "filename": "ex_069__00__an_emergency__arasaac_call-8b66d480.png"
           }
         ]
       },
@@ -3567,6 +3849,27 @@ window.REVIEW_DATA = {
       "sentence": "Please do not tell the whole class.",
       "optionA": {
         "sequence": [
+          "do not touch",
+          "tell",
+          "class 10"
+        ],
+        "symbols": [
+          {
+            "label": "do not touch",
+            "filename": "ex_070__00__do_not__arasaac_do-not-touch-19d9aaff.png"
+          },
+          {
+            "label": "tell",
+            "filename": "ex_070__01__tell__arasaac_tell-ea0aa1bb.png"
+          },
+          {
+            "label": "class 10",
+            "filename": "ex_070__02__the_whole_class__arasaac_class-10-4243ca25.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "test tell answer",
           "class sit"
         ],
@@ -3580,32 +3883,6 @@ window.REVIEW_DATA = {
             "filename": "ex_070__class__sclera_class-sit-db10da19.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "please",
-          "do not lie",
-          "test tell answer",
-          "Whole"
-        ],
-        "symbols": [
-          {
-            "label": "please",
-            "filename": "ex_070__Please__arasaac_please-d20d05bf.png"
-          },
-          {
-            "label": "do not lie",
-            "filename": "ex_070__do_not__sclera_do-not-lie-04d1741c.png"
-          },
-          {
-            "label": "test tell answer",
-            "filename": "ex_070__tell__sclera_test-tell-answer-da38f29a.png"
-          },
-          {
-            "label": "Whole",
-            "filename": "ex_070__the_whole_class__noun-project_whole-3f076117.svg"
-          }
-        ]
       }
     },
     {
@@ -3615,6 +3892,32 @@ window.REVIEW_DATA = {
       "position": 1,
       "sentence": "A student posted that they want to kill themselves after school.",
       "optionA": {
+        "sequence": [
+          "student",
+          "computer online banking",
+          "to die [REVIEW]",
+          "school"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_071__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "computer online banking",
+            "filename": "ex_071__01__posted__sclera_computer-online-banking-ff584266.png"
+          },
+          {
+            "label": "to die",
+            "filename": "ex_071__02__want_to_kill_themselves__arasaac_to-die-d68c4cf9.png"
+          },
+          {
+            "label": "school",
+            "filename": "ex_071__03__after_school__arasaac_school-338b3d14.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "to cut oneself [HIGH-RISK]",
@@ -3634,32 +3937,6 @@ window.REVIEW_DATA = {
             "filename": "ex_071__after_school__sclera_school-338b3d14.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "post office [HIGH-RISK]",
-          "hands [HIGH-RISK]",
-          "school [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_071__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "post office",
-            "filename": "ex_071__posted__twemoji_post-office-7d9e9734.svg"
-          },
-          {
-            "label": "hands",
-            "filename": "ex_071__they_want_to_kill_themselves__arasaac_hands-1e4accd2.png"
-          },
-          {
-            "label": "school",
-            "filename": "ex_071__after_school__sclera_school-338b3d14.png"
-          }
-        ]
       }
     },
     {
@@ -3669,6 +3946,27 @@ window.REVIEW_DATA = {
       "position": 2,
       "sentence": "A classmate said they plan to hurt another student.",
       "optionA": {
+        "sequence": [
+          "raise finger to ask a question 1",
+          "hurt",
+          "student"
+        ],
+        "symbols": [
+          {
+            "label": "raise finger to ask a question 1",
+            "filename": "ex_072__00__a_classmate__sclera_raise-finger-to-ask-a-question-1-98261ea4.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_072__01__plan_to_hurt__arasaac_hurt-b1abca5f.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_072__02__another_student__arasaac_student-5105e1a9.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "student 2 [HIGH-RISK]",
           "hurt oneself [HIGH-RISK]",
@@ -3688,27 +3986,6 @@ window.REVIEW_DATA = {
             "filename": "ex_072__another_student__arasaac_student-2-d1072e9d.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student 2 [HIGH-RISK]",
-          "hurt oneself [HIGH-RISK]",
-          "touch another [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student 2",
-            "filename": "ex_072__classmate__arasaac_student-2-d1072e9d.png"
-          },
-          {
-            "label": "hurt oneself",
-            "filename": "ex_072__plan_to_hurt__arasaac_hurt-oneself-8c61996a.png"
-          },
-          {
-            "label": "touch another",
-            "filename": "ex_072__another_student__sclera_touch-another-95f19c49.png"
-          }
-        ]
       }
     },
     {
@@ -3718,6 +3995,37 @@ window.REVIEW_DATA = {
       "position": 3,
       "sentence": "Someone sent threatening messages to a student online.",
       "optionA": {
+        "sequence": [
+          "angry at someone",
+          "make - do - write",
+          "online education [REVIEW]",
+          "student",
+          "computer online shopping"
+        ],
+        "symbols": [
+          {
+            "label": "angry at someone",
+            "filename": "ex_073__00__Someone__sclera_angry-at-someone-e5ae978d.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_073__01__sent__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "online education",
+            "filename": "ex_073__02__threatening_messages__arasaac_online-education-473381ec.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_073__03__a_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "computer online shopping",
+            "filename": "ex_073__04__online__sclera_computer-online-shopping-ac2c7b15.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "to make angry 3 [HIGH-RISK]",
           "student [HIGH-RISK]",
@@ -3737,37 +4045,6 @@ window.REVIEW_DATA = {
             "filename": "ex_073__online__arasaac_open-78bb034a.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "angry at someone [HIGH-RISK]",
-          "write [HIGH-RISK]",
-          "email [HIGH-RISK]",
-          "student [HIGH-RISK]",
-          "open [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "angry at someone",
-            "filename": "ex_073__Someone__sclera_angry-at-someone-e5ae978d.png"
-          },
-          {
-            "label": "write",
-            "filename": "ex_073__sent__arasaac_write-cf0fe3f7.png"
-          },
-          {
-            "label": "email",
-            "filename": "ex_073__threatening_messages__arasaac_email-c876f09f.png"
-          },
-          {
-            "label": "student",
-            "filename": "ex_073__a_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "open",
-            "filename": "ex_073__online__arasaac_open-78bb034a.png"
-          }
-        ]
       }
     },
     {
@@ -3777,6 +4054,37 @@ window.REVIEW_DATA = {
       "position": 4,
       "sentence": "A student reported sexual messages from an older person.",
       "optionA": {
+        "sequence": [
+          "student",
+          "to report",
+          "sexual relation [REVIEW]",
+          "from home to school parents",
+          "old person 1"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_074__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to report",
+            "filename": "ex_074__01__reported__arasaac_to-report-be819723.png"
+          },
+          {
+            "label": "sexual relation",
+            "filename": "ex_074__02__sexual_messages__arasaac_sexual-relation-a0104663.png"
+          },
+          {
+            "label": "from home to school parents",
+            "filename": "ex_074__03__from__sclera_from-home-to-school-parents-897545f1.png"
+          },
+          {
+            "label": "old person 1",
+            "filename": "ex_074__04__an_older_person__arasaac_old-person-1-a490fe45.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "body massage [HIGH-RISK]",
@@ -3801,32 +4109,6 @@ window.REVIEW_DATA = {
             "filename": "ex_074__report__arasaac_medical-report-2fdebf2e.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "body massage [HIGH-RISK]",
-          "Person [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_074__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "medical report",
-            "filename": "ex_074__reported__arasaac_medical-report-2fdebf2e.png"
-          },
-          {
-            "label": "body massage",
-            "filename": "ex_074__sexual_messages__arasaac_body-massage-5a899cd2.png"
-          },
-          {
-            "label": "Person",
-            "filename": "ex_074__an_older_person__noun-project_person-ad7563ce.svg"
-          }
-        ]
       }
     },
     {
@@ -3836,22 +4118,6 @@ window.REVIEW_DATA = {
       "position": 5,
       "sentence": "A student said they were touched in a way that felt wrong.",
       "optionA": {
-        "sequence": [
-          "touch [HIGH-RISK]",
-          "wrong [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "touch",
-            "filename": "ex_075__touched__arasaac_touch-1e7f9296.png"
-          },
-          {
-            "label": "wrong",
-            "filename": "ex_075__felt_wrong__noun-project_wrong-5b2c7976.svg"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "don't touch! [HIGH-RISK]",
@@ -3871,6 +4137,32 @@ window.REVIEW_DATA = {
             "filename": "ex_075__felt_wrong__arasaac_right-or-wrong-11737115.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "to say",
+          "do magic",
+          "touch [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_075__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to say",
+            "filename": "ex_075__01__said__arasaac_to-say-75ff2764.png"
+          },
+          {
+            "label": "do magic",
+            "filename": "ex_075__02__touched__arasaac_do-magic-05f6fac4.png"
+          },
+          {
+            "label": "touch",
+            "filename": "ex_075__03__touched_in_a_way_that_felt_wrong__arasaac_touch-1e7f9296.png"
+          }
+        ]
       }
     },
     {
@@ -3880,27 +4172,6 @@ window.REVIEW_DATA = {
       "position": 6,
       "sentence": "A student wrote that they are afraid to go home tonight.",
       "optionA": {
-        "sequence": [
-          "sadness [HIGH-RISK]",
-          "home 1 [HIGH-RISK]",
-          "match [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "sadness",
-            "filename": "ex_076__afraid__arasaac_sadness-4e201999.png"
-          },
-          {
-            "label": "home 1",
-            "filename": "ex_076__go_home__arasaac_home-1-1217da3b.png"
-          },
-          {
-            "label": "match",
-            "filename": "ex_076__tonight__arasaac_match-10c8b16c.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "ashamed 4 [HIGH-RISK]",
           "Home [HIGH-RISK]",
@@ -3920,6 +4191,42 @@ window.REVIEW_DATA = {
             "filename": "ex_076__tonight__arasaac_match-10c8b16c.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "afraid",
+          "to go",
+          "home school father",
+          "night",
+          "go home"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_076__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "afraid",
+            "filename": "ex_076__01__afraid__sclera_afraid-88b53afa.png"
+          },
+          {
+            "label": "to go",
+            "filename": "ex_076__02__to_go__arasaac_to-go-594b8558.png"
+          },
+          {
+            "label": "home school father",
+            "filename": "ex_076__03__home__sclera_home-school-father-6c962218.png"
+          },
+          {
+            "label": "night",
+            "filename": "ex_076__04__tonight__arasaac_night-ab315890.png"
+          },
+          {
+            "label": "go home",
+            "filename": "ex_076__05__afraid_to_go_home_tonight__sclera_go-home-1d7193f5.png"
+          }
+        ]
       }
     },
     {
@@ -3929,32 +4236,6 @@ window.REVIEW_DATA = {
       "position": 7,
       "sentence": "A student reported being hit by a caregiver.",
       "optionA": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "hit 5 [HIGH-RISK]",
-          "counselor [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_077__student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "medical report",
-            "filename": "ex_077__reported__arasaac_medical-report-2fdebf2e.png"
-          },
-          {
-            "label": "hit 5",
-            "filename": "ex_077__being_hit__arasaac_hit-5-4229510f.png"
-          },
-          {
-            "label": "counselor",
-            "filename": "ex_077__caregiver__arasaac_counselor-a83435d6.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "counsellor (female) [HIGH-RISK]",
@@ -3972,6 +4253,27 @@ window.REVIEW_DATA = {
           {
             "label": "hit 5",
             "filename": "ex_077__hit__arasaac_hit-5-4229510f.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "student 1",
+          "to report",
+          "caregiver [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student 1",
+            "filename": "ex_077__00__student__arasaac_student-1-93320fb1.png"
+          },
+          {
+            "label": "to report",
+            "filename": "ex_077__01__reported__arasaac_to-report-be819723.png"
+          },
+          {
+            "label": "caregiver",
+            "filename": "ex_077__02__being_hit_by_a_caregiver__sclera_caregiver-26fa64ba.png"
           }
         ]
       }
@@ -4010,27 +4312,32 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "angry at someone [HIGH-RISK]",
-          "asking for help [HIGH-RISK]",
-          "pictures [HIGH-RISK]"
+          "angry at someone",
+          "to look over 1",
+          "asking for cigarette",
+          "to take pictures [REVIEW]",
+          "student"
         ],
         "symbols": [
           {
-            "label": "student",
-            "filename": "ex_078__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
             "label": "angry at someone",
-            "filename": "ex_078__someone__sclera_angry-at-someone-e5ae978d.png"
+            "filename": "ex_078__00__someone__sclera_angry-at-someone-e5ae978d.png"
           },
           {
-            "label": "asking for help",
-            "filename": "ex_078__keeps_asking__sclera_asking-for-help-7f460cce.png"
+            "label": "to look over 1",
+            "filename": "ex_078__01__keeps__arasaac_to-look-over-1-a91037d3.png"
           },
           {
-            "label": "pictures",
-            "filename": "ex_078__private_pictures__icomoon_pictures-61636d6e.svg"
+            "label": "asking for cigarette",
+            "filename": "ex_078__02__asking__sclera_asking-for-cigarette-8dc7552e.png"
+          },
+          {
+            "label": "to take pictures",
+            "filename": "ex_078__03__private_pictures__arasaac_to-take-pictures-b854c956.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_078__04__A_student__arasaac_student-5105e1a9.png"
           }
         ]
       }
@@ -4042,22 +4349,6 @@ window.REVIEW_DATA = {
       "position": 9,
       "sentence": "A student wrote that they feel hopeless and want everything to end.",
       "optionA": {
-        "sequence": [
-          "sadness [HIGH-RISK]",
-          "harm [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "sadness",
-            "filename": "ex_079__feel_hopeless__arasaac_sadness-4e201999.png"
-          },
-          {
-            "label": "harm",
-            "filename": "ex_079__want_everything_to_end__arasaac_harm-c8b1ff43.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "sadness [HIGH-RISK]",
           "to want [HIGH-RISK]"
@@ -4072,6 +4363,32 @@ window.REVIEW_DATA = {
             "filename": "ex_079__want_to_end_life__arasaac_to-want-2ee1c9fc.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "writing",
+          "sad",
+          "to die [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_079__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "writing",
+            "filename": "ex_079__01__wrote__arasaac_writing-0e1fa018.png"
+          },
+          {
+            "label": "sad",
+            "filename": "ex_079__02__feel_hopeless__arasaac_sad-b46deac4.png"
+          },
+          {
+            "label": "to die",
+            "filename": "ex_079__03__want_everything_to_end__arasaac_to-die-d68c4cf9.png"
+          }
+        ]
       }
     },
     {
@@ -4082,22 +4399,22 @@ window.REVIEW_DATA = {
       "sentence": "A student said they do not want to be alive anymore.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "say goodbye sad [HIGH-RISK]",
-          "hands [HIGH-RISK]"
+          "student",
+          "to say",
+          "to die [REVIEW]"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_080__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_080__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "say goodbye sad",
-            "filename": "ex_080__said__sclera_say-goodbye-sad-4d822b22.png"
+            "label": "to say",
+            "filename": "ex_080__01__said__arasaac_to-say-75ff2764.png"
           },
           {
-            "label": "hands",
-            "filename": "ex_080__they_do_not_want_to_be_alive_anymore__arasaac_hands-1e4accd2.png"
+            "label": "to die",
+            "filename": "ex_080__02__do_not_want_to_be_alive_anymore__arasaac_to-die-d68c4cf9.png"
           }
         ]
       },
@@ -4126,22 +4443,27 @@ window.REVIEW_DATA = {
       "sentence": "A student described being threatened in the hallway.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "to make angry 3 [HIGH-RISK]",
-          "bathroom [HIGH-RISK]"
+          "student",
+          "make - do - write",
+          "greet [REVIEW]",
+          "corridor"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_081__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_081__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "to make angry 3",
-            "filename": "ex_081__being_threatened__arasaac_to-make-angry-3-85d62af5.png"
+            "label": "make - do - write",
+            "filename": "ex_081__01__described__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "bathroom",
-            "filename": "ex_081__the_hallway__arasaac_bathroom-c3aacadf.png"
+            "label": "greet",
+            "filename": "ex_081__02__being_threatened__arasaac_greet-ff98faab.png"
+          },
+          {
+            "label": "corridor",
+            "filename": "ex_081__03__in_the_hallway__arasaac_corridor-43271913.png"
           }
         ]
       },
@@ -4175,37 +4497,6 @@ window.REVIEW_DATA = {
       "sentence": "A student reported repeated bullying with threats of violence.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "odd 2 [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "thinking of suicide [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_082__student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "medical report",
-            "filename": "ex_082__reported__arasaac_medical-report-2fdebf2e.png"
-          },
-          {
-            "label": "odd 2",
-            "filename": "ex_082__repeated__arasaac_odd-2-35a6f4c2.png"
-          },
-          {
-            "label": "counselor",
-            "filename": "ex_082__bullying__arasaac_counselor-a83435d6.png"
-          },
-          {
-            "label": "thinking of suicide",
-            "filename": "ex_082__threats_of_violence__sclera_thinking-of-suicide-57ca46a2.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "homework [HIGH-RISK]",
           "break [HIGH-RISK]",
           "wars [HIGH-RISK]"
@@ -4224,6 +4515,37 @@ window.REVIEW_DATA = {
             "filename": "ex_082__violence__arasaac_wars-156cd3a4.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student 1",
+          "to report",
+          "to repeat",
+          "to repeat",
+          "gender violence [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student 1",
+            "filename": "ex_082__00__student__arasaac_student-1-93320fb1.png"
+          },
+          {
+            "label": "to report",
+            "filename": "ex_082__01__reported__arasaac_to-report-be819723.png"
+          },
+          {
+            "label": "to repeat",
+            "filename": "ex_082__02__repeated__arasaac_to-repeat-3e4e231e.png"
+          },
+          {
+            "label": "to repeat",
+            "filename": "ex_082__03__bullying__arasaac_to-repeat-3e4e231e.png"
+          },
+          {
+            "label": "gender violence",
+            "filename": "ex_082__04__threats_of_violence__arasaac_gender-violence-af68cbb0.png"
+          }
+        ]
       }
     },
     {
@@ -4233,6 +4555,32 @@ window.REVIEW_DATA = {
       "position": 3,
       "sentence": "A student said someone shared explicit pictures at school.",
       "optionA": {
+        "sequence": [
+          "angry at someone",
+          "make - do - write",
+          "picture hat",
+          "school"
+        ],
+        "symbols": [
+          {
+            "label": "angry at someone",
+            "filename": "ex_083__00__someone__sclera_angry-at-someone-e5ae978d.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_083__01__shared__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "picture hat",
+            "filename": "ex_083__02__explicit_pictures__arasaac_picture-hat-eef17924.png"
+          },
+          {
+            "label": "school",
+            "filename": "ex_083__03__at_school__arasaac_school-338b3d14.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "pictures [HIGH-RISK]",
           "open [HIGH-RISK]",
@@ -4252,32 +4600,6 @@ window.REVIEW_DATA = {
             "filename": "ex_083__school__sclera_school-338b3d14.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "angry at someone [HIGH-RISK]",
-          "write [HIGH-RISK]",
-          "pictures [HIGH-RISK]",
-          "school [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "angry at someone",
-            "filename": "ex_083__someone__sclera_angry-at-someone-e5ae978d.png"
-          },
-          {
-            "label": "write",
-            "filename": "ex_083__shared__arasaac_write-cf0fe3f7.png"
-          },
-          {
-            "label": "pictures",
-            "filename": "ex_083__explicit_pictures__icomoon_pictures-61636d6e.svg"
-          },
-          {
-            "label": "school",
-            "filename": "ex_083__at_school__sclera_school-338b3d14.png"
-          }
-        ]
       }
     },
     {
@@ -4288,32 +4610,37 @@ window.REVIEW_DATA = {
       "sentence": "A student reported fear after being followed by another student.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "sadness [HIGH-RISK]",
-          "last 1 [HIGH-RISK]",
-          "touch another [HIGH-RISK]"
+          "student",
+          "to report",
+          "fear",
+          "wash hands after going to the toilet",
+          "danger 3",
+          "student"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_084__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_084__00__a_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_084__reported__arasaac_medical-report-2fdebf2e.png"
+            "label": "to report",
+            "filename": "ex_084__01__reported__arasaac_to-report-be819723.png"
           },
           {
-            "label": "sadness",
-            "filename": "ex_084__fear__arasaac_sadness-4e201999.png"
+            "label": "fear",
+            "filename": "ex_084__02__fear__arasaac_fear-6deebe0a.png"
           },
           {
-            "label": "last 1",
-            "filename": "ex_084__being_followed__arasaac_last-1-23a216ac.png"
+            "label": "wash hands after going to the toilet",
+            "filename": "ex_084__03__after__sclera_wash-hands-after-going-to-the-toilet-a9f4e95a.png"
           },
           {
-            "label": "touch another",
-            "filename": "ex_084__another_student__sclera_touch-another-95f19c49.png"
+            "label": "danger 3",
+            "filename": "ex_084__04__being_followed__arasaac_danger-3-d4dc65db.png"
+          },
+          {
+            "label": "student",
+            "filename": "ex_084__05__another_student__arasaac_student-5105e1a9.png"
           }
         ]
       },
@@ -4352,27 +4679,6 @@ window.REVIEW_DATA = {
       "sentence": "A student said they are being pressured to do sexual things.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "adult [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_085__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "counselor",
-            "filename": "ex_085__being_pressured__arasaac_counselor-a83435d6.png"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_085__sexual_things__arasaac_adult-82a736ae.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "not calm under pressure [HIGH-RISK]",
           "high [HIGH-RISK]"
         ],
@@ -4386,6 +4692,27 @@ window.REVIEW_DATA = {
             "filename": "ex_085__sexual_activity__arasaac_high-c767b09b.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "to say",
+          "sexual relation [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_085__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to say",
+            "filename": "ex_085__01__said__arasaac_to-say-75ff2764.png"
+          },
+          {
+            "label": "sexual relation",
+            "filename": "ex_085__02__being_pressured_to_do_sexual_things__arasaac_sexual-relation-a0104663.png"
+          }
+        ]
       }
     },
     {
@@ -4396,27 +4723,27 @@ window.REVIEW_DATA = {
       "sentence": "A student said they were locked in a room at home.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "bathroom door locked [HIGH-RISK]",
-          "art room [HIGH-RISK]",
-          "Home [HIGH-RISK]"
+          "student",
+          "in",
+          "home",
+          "what have you said"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_086__student__arasaac_student-5105e1a9.png"
+            "filename": "ex_086__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "bathroom door locked",
-            "filename": "ex_086__locked__sclera_bathroom-door-locked-4cc5f342.png"
+            "label": "in",
+            "filename": "ex_086__01__locked_in_a_room__arasaac_in-e65d5fe4.png"
           },
           {
-            "label": "art room",
-            "filename": "ex_086__room__mulberry_art-room-69bb1611.svg"
+            "label": "home",
+            "filename": "ex_086__02__at_home__arasaac_home-31d8e0c4.png"
           },
           {
-            "label": "Home",
-            "filename": "ex_086__home__noun-project_home-f1c2ea1f.svg"
+            "label": "what have you said",
+            "filename": "ex_086__03__said__arasaac_what-have-you-said-daa9d4f8.png"
           }
         ]
       },
@@ -4455,6 +4782,42 @@ window.REVIEW_DATA = {
       "sentence": "A student wrote that no adult believes them about being hurt.",
       "optionA": {
         "sequence": [
+          "student",
+          "writing",
+          "do not touch",
+          "adult",
+          "make - do - write",
+          "hurt"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_087__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "writing",
+            "filename": "ex_087__01__wrote__arasaac_writing-0e1fa018.png"
+          },
+          {
+            "label": "do not touch",
+            "filename": "ex_087__02__no__arasaac_do-not-touch-19d9aaff.png"
+          },
+          {
+            "label": "adult",
+            "filename": "ex_087__03__adult__arasaac_adult-82a736ae.png"
+          },
+          {
+            "label": "make - do - write",
+            "filename": "ex_087__04__believes__arasaac_make-do-write-9f433bcc.png"
+          },
+          {
+            "label": "hurt",
+            "filename": "ex_087__05__being_hurt__arasaac_hurt-b1abca5f.png"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
           "student [HIGH-RISK]",
           "male [HIGH-RISK]",
           "hurt [HIGH-RISK]",
@@ -4478,27 +4841,6 @@ window.REVIEW_DATA = {
             "filename": "ex_087__not_believed__sclera_extra-work-not-happy-38fbe7a7.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "No [HIGH-RISK]",
-          "hurt [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_087__student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "No",
-            "filename": "ex_087__no_adult_believes_them__noun-project_no-58d7645c.svg"
-          },
-          {
-            "label": "hurt",
-            "filename": "ex_087__being_hurt__arasaac_hurt-b1abca5f.png"
-          }
-        ]
       }
     },
     {
@@ -4508,27 +4850,6 @@ window.REVIEW_DATA = {
       "position": 8,
       "sentence": "A student said they might hurt themselves after class.",
       "optionA": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "harm [HIGH-RISK]",
-          "maths class [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_088__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "harm",
-            "filename": "ex_088__hurt_themselves__arasaac_harm-c8b1ff43.png"
-          },
-          {
-            "label": "maths class",
-            "filename": "ex_088__after_class__arasaac_maths-class-60967e81.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "self - steem [HIGH-RISK]",
@@ -4548,6 +4869,32 @@ window.REVIEW_DATA = {
             "filename": "ex_088__after_class__arasaac_maths-class-60967e81.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "to say",
+          "self-harm cutting",
+          "class"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_088__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to say",
+            "filename": "ex_088__01__said__arasaac_to-say-75ff2764.png"
+          },
+          {
+            "label": "self-harm cutting",
+            "filename": "ex_088__02__might_hurt_themselves__sclera_self-harm-cutting-0ca0fd23.png"
+          },
+          {
+            "label": "class",
+            "filename": "ex_088__03__after_class__arasaac_class-2b64dbb6.png"
+          }
+        ]
       }
     },
     {
@@ -4558,42 +4905,42 @@ window.REVIEW_DATA = {
       "sentence": "A student said another person might bring a weapon tomorrow.",
       "optionA": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "write [HIGH-RISK]",
-          "touch another [HIGH-RISK]",
-          "to have [HIGH-RISK]",
-          "break [HIGH-RISK]",
-          "General [HIGH-RISK]",
-          "time [HIGH-RISK]"
+          "student",
+          "to say",
+          "angry at someone",
+          "perhaps",
+          "make - do - write",
+          "weapon",
+          "tomorrow"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_089__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_089__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "write",
-            "filename": "ex_089__said__arasaac_write-cf0fe3f7.png"
+            "label": "to say",
+            "filename": "ex_089__01__said__arasaac_to-say-75ff2764.png"
           },
           {
-            "label": "touch another",
-            "filename": "ex_089__another_person__sclera_touch-another-95f19c49.png"
+            "label": "angry at someone",
+            "filename": "ex_089__02__another_person__sclera_angry-at-someone-e5ae978d.png"
           },
           {
-            "label": "to have",
-            "filename": "ex_089__might__arasaac_to-have-bd9d989f.png"
+            "label": "perhaps",
+            "filename": "ex_089__03__might__arasaac_think-28ba5e1f.png"
           },
           {
-            "label": "break",
-            "filename": "ex_089__bring__arasaac_break-e698bdaf.png"
+            "label": "make - do - write",
+            "filename": "ex_089__04__bring__arasaac_make-do-write-9f433bcc.png"
           },
           {
-            "label": "General",
-            "filename": "ex_089__a_weapon__noun-project_general-2e187887.svg"
+            "label": "weapon",
+            "filename": "ex_089__05__a_weapon__arasaac_weapon-8b7b2164.png"
           },
           {
-            "label": "time",
-            "filename": "ex_089__tomorrow__arasaac_time-f802c2f0.png"
+            "label": "tomorrow",
+            "filename": "ex_089__06__tomorrow__sclera_tomorrow-2ea9371a.png"
           }
         ]
       },
@@ -4653,17 +5000,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "to feel sick 1 [HIGH-RISK]",
-          "safe [HIGH-RISK]"
+          "student",
+          "to feel sick",
+          "angry",
+          "in [REVIEW]"
         ],
         "symbols": [
           {
-            "label": "to feel sick 1",
-            "filename": "ex_090__they_feel_trapped__arasaac_to-feel-sick-1-ed4e0732.png"
+            "label": "student",
+            "filename": "ex_090__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "safe",
-            "filename": "ex_090__unsafe__arasaac_safe-9bffe81c.png"
+            "label": "to feel sick",
+            "filename": "ex_090__01__feel__arasaac_to-feel-sick-ed3cd4cd.png"
+          },
+          {
+            "label": "angry",
+            "filename": "ex_090__02__trapped__arasaac_angry-01984a19.png"
+          },
+          {
+            "label": "in",
+            "filename": "ex_090__03__unsafe__arasaac_in-e65d5fe4.png"
           }
         ]
       }
@@ -4676,32 +5033,6 @@ window.REVIEW_DATA = {
       "sentence": "A student said someone keeps touching their body without permission.",
       "optionA": {
         "sequence": [
-          "Person [HIGH-RISK]",
-          "touch [HIGH-RISK]",
-          "body [HIGH-RISK]",
-          "No [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "Person",
-            "filename": "ex_091__someone__noun-project_person-ad7563ce.svg"
-          },
-          {
-            "label": "touch",
-            "filename": "ex_091__touching__arasaac_touch-1e7f9296.png"
-          },
-          {
-            "label": "body",
-            "filename": "ex_091__their_body__arasaac_body-60984d66.png"
-          },
-          {
-            "label": "No",
-            "filename": "ex_091__without_permission__noun-project_no-58d7645c.svg"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
           "touching intimate female [HIGH-RISK]",
           "No [HIGH-RISK]"
         ],
@@ -4713,6 +5044,37 @@ window.REVIEW_DATA = {
           {
             "label": "No",
             "filename": "ex_091__no_permission__noun-project_no-58d7645c.svg"
+          }
+        ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "unknown",
+          "intimate touching",
+          "parts",
+          "do not touch [REVIEW]"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_091__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "unknown",
+            "filename": "ex_091__01__someone__arasaac_unknown-6250c08a.png"
+          },
+          {
+            "label": "intimate touching",
+            "filename": "ex_091__02__keeps_touching__sclera_intimate-touching-c8b10f6d.png"
+          },
+          {
+            "label": "parts",
+            "filename": "ex_091__03__their_body__arasaac_parts-db64c4dd.png"
+          },
+          {
+            "label": "do not touch",
+            "filename": "ex_091__04__without_permission__arasaac_do-not-touch-19d9aaff.png"
           }
         ]
       }
@@ -4741,22 +5103,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "friend [HIGH-RISK]",
-          "talk [HIGH-RISK]",
-          "suicide 1 [HIGH-RISK]"
+          "student",
+          "to report",
+          "friend 1",
+          "suicide"
         ],
         "symbols": [
           {
-            "label": "friend",
-            "filename": "ex_092__a_friend__arasaac_friend-02c67213.png"
+            "label": "student",
+            "filename": "ex_092__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "talk",
-            "filename": "ex_092__talking__arasaac_talk-75bc3822.png"
+            "label": "to report",
+            "filename": "ex_092__01__reported__arasaac_to-report-be819723.png"
           },
           {
-            "label": "suicide 1",
-            "filename": "ex_092__suicide__arasaac_suicide-1-413cae96.png"
+            "label": "friend 1",
+            "filename": "ex_092__02__a_friend__arasaac_friend-1-4fd81db0.png"
+          },
+          {
+            "label": "suicide",
+            "filename": "ex_092__03__talking_about_suicide__arasaac_suicide-542f593e.png"
           }
         ]
       }
@@ -4769,22 +5136,32 @@ window.REVIEW_DATA = {
       "sentence": "A student said they feel panic and cannot stay safe alone.",
       "optionA": {
         "sequence": [
-          "help [HIGH-RISK]",
-          "fire stay calm [HIGH-RISK]",
-          "alone 1 [HIGH-RISK]"
+          "student",
+          "attack",
+          "do not touch",
+          "safe [REVIEW]",
+          "computer alone"
         ],
         "symbols": [
           {
-            "label": "help",
-            "filename": "ex_093__feel_panic__arasaac_help-b0621ed4.png"
+            "label": "student",
+            "filename": "ex_093__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "fire stay calm",
-            "filename": "ex_093__cannot_stay_safe__sclera_fire-stay-calm-0fa115c6.png"
+            "label": "attack",
+            "filename": "ex_093__01__feel_panic__arasaac_attack-0b80567c.png"
           },
           {
-            "label": "alone 1",
-            "filename": "ex_093__alone__arasaac_alone-1-5cc8f76a.png"
+            "label": "do not touch",
+            "filename": "ex_093__02__cannot__arasaac_do-not-touch-19d9aaff.png"
+          },
+          {
+            "label": "safe",
+            "filename": "ex_093__03__cannot_stay_safe__arasaac_safe-9bffe81c.png"
+          },
+          {
+            "label": "computer alone",
+            "filename": "ex_093__04__alone__sclera_computer-alone-75a21d08.png"
           }
         ]
       },
@@ -4839,27 +5216,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "understand language [HIGH-RISK]",
-          "chat [HIGH-RISK]"
+          "student 1",
+          "tell",
+          "sexual relation",
+          "group"
         ],
         "symbols": [
           {
-            "label": "student",
-            "filename": "ex_094__student__arasaac_student-5105e1a9.png"
+            "label": "student 1",
+            "filename": "ex_094__00__student__arasaac_student-1-93320fb1.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_094__reported__arasaac_medical-report-2fdebf2e.png"
+            "label": "tell",
+            "filename": "ex_094__01__reported__arasaac_tell-ea0aa1bb.png"
           },
           {
-            "label": "understand language",
-            "filename": "ex_094__coercive_sexual_language__sclera_understand-language-16a05aee.png"
+            "label": "sexual relation",
+            "filename": "ex_094__02__coercive_sexual_language__arasaac_sexual-relation-a0104663.png"
           },
           {
-            "label": "chat",
-            "filename": "ex_094__group_chat__icomoon_chat-322f224d.svg"
+            "label": "group",
+            "filename": "ex_094__03__group_chat__sclera_group-c758cfee.png"
           }
         ]
       }
@@ -4893,22 +5270,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "ashamed 4 [HIGH-RISK]",
-          "adult [HIGH-RISK]"
+          "student 1",
+          "to say",
+          "afraid",
+          "adult"
         ],
         "symbols": [
           {
-            "label": "student",
-            "filename": "ex_095__A_student__arasaac_student-5105e1a9.png"
+            "label": "student 1",
+            "filename": "ex_095__00__student__arasaac_student-1-93320fb1.png"
           },
           {
-            "label": "ashamed 4",
-            "filename": "ex_095__afraid__arasaac_ashamed-4-c387df2f.png"
+            "label": "to say",
+            "filename": "ex_095__01__said__arasaac_to-say-75ff2764.png"
+          },
+          {
+            "label": "afraid",
+            "filename": "ex_095__02__afraid__sclera_afraid-88b53afa.png"
           },
           {
             "label": "adult",
-            "filename": "ex_095__a_specific_adult__arasaac_adult-82a736ae.png"
+            "filename": "ex_095__03__specific_adult__arasaac_adult-82a736ae.png"
           }
         ]
       }
@@ -4942,22 +5324,22 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "to give money to beggars 1 [HIGH-RISK]",
-          "write [HIGH-RISK]"
+          "student",
+          "online education [REVIEW]",
+          "images cube"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_096__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_096__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "to give money to beggars 1",
-            "filename": "ex_096__being_blackmailed__arasaac_to-give-money-to-beggars-1-b6319869.png"
+            "label": "online education",
+            "filename": "ex_096__01__they_are_being_blackmailed__arasaac_online-education-473381ec.png"
           },
           {
-            "label": "write",
-            "filename": "ex_096__images__arasaac_write-cf0fe3f7.png"
+            "label": "images cube",
+            "filename": "ex_096__02__images__arasaac_images-cube-0a74a5b7.png"
           }
         ]
       }
@@ -4991,27 +5373,27 @@ window.REVIEW_DATA = {
       },
       "optionB": {
         "sequence": [
-          "student [HIGH-RISK]",
-          "medical report [HIGH-RISK]",
-          "break [HIGH-RISK]",
-          "body [HIGH-RISK]"
+          "student",
+          "to report",
+          "greet [REVIEW]",
+          "their 1"
         ],
         "symbols": [
           {
             "label": "student",
-            "filename": "ex_097__A_student__arasaac_student-5105e1a9.png"
+            "filename": "ex_097__00__A_student__arasaac_student-5105e1a9.png"
           },
           {
-            "label": "medical report",
-            "filename": "ex_097__reported__arasaac_medical-report-2fdebf2e.png"
+            "label": "to report",
+            "filename": "ex_097__01__reported__arasaac_to-report-be819723.png"
           },
           {
-            "label": "break",
-            "filename": "ex_097__threats__arasaac_break-e698bdaf.png"
+            "label": "greet",
+            "filename": "ex_097__02__threats__arasaac_greet-ff98faab.png"
           },
           {
-            "label": "body",
-            "filename": "ex_097__their_identity__arasaac_body-60984d66.png"
+            "label": "their 1",
+            "filename": "ex_097__03__their_identity__arasaac_their-1-da9388c0.png"
           }
         ]
       }
@@ -5023,6 +5405,27 @@ window.REVIEW_DATA = {
       "position": 8,
       "sentence": "A student said they were forced to hide an injury.",
       "optionA": {
+        "sequence": [
+          "student",
+          "tell",
+          "injury"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_098__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "tell",
+            "filename": "ex_098__01__said__arasaac_tell-ea0aa1bb.png"
+          },
+          {
+            "label": "injury",
+            "filename": "ex_098__02__were_forced_to_hide_an_injury__arasaac_injury-8f869fd6.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "student [HIGH-RISK]",
           "help [HIGH-RISK]",
@@ -5047,32 +5450,6 @@ window.REVIEW_DATA = {
             "filename": "ex_098__injury__arasaac_injury-8f869fd6.png"
           }
         ]
-      },
-      "optionB": {
-        "sequence": [
-          "student [HIGH-RISK]",
-          "counselor [HIGH-RISK]",
-          "help [HIGH-RISK]",
-          "injury [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "student",
-            "filename": "ex_098__A_student__arasaac_student-5105e1a9.png"
-          },
-          {
-            "label": "counselor",
-            "filename": "ex_098__forced__arasaac_counselor-a83435d6.png"
-          },
-          {
-            "label": "help",
-            "filename": "ex_098__hide__arasaac_help-b0621ed4.png"
-          },
-          {
-            "label": "injury",
-            "filename": "ex_098__an_injury__arasaac_injury-8f869fd6.png"
-          }
-        ]
       }
     },
     {
@@ -5082,32 +5459,6 @@ window.REVIEW_DATA = {
       "position": 9,
       "sentence": "A student said they are scared because someone knows where they live.",
       "optionA": {
-        "sequence": [
-          "ashamed 4 [HIGH-RISK]",
-          "angry at someone [HIGH-RISK]",
-          "to know [HIGH-RISK]",
-          "supported employment where [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "ashamed 4",
-            "filename": "ex_099__scared__arasaac_ashamed-4-c387df2f.png"
-          },
-          {
-            "label": "angry at someone",
-            "filename": "ex_099__someone__sclera_angry-at-someone-e5ae978d.png"
-          },
-          {
-            "label": "to know",
-            "filename": "ex_099__knows__arasaac_to-know-09fb2283.png"
-          },
-          {
-            "label": "supported employment where",
-            "filename": "ex_099__where_they_live__sclera_supported-employment-where-b18e0dc4.png"
-          }
-        ]
-      },
-      "optionB": {
         "sequence": [
           "ashamed 4 [HIGH-RISK]",
           "angry at someone [HIGH-RISK]",
@@ -5132,6 +5483,32 @@ window.REVIEW_DATA = {
             "filename": "ex_099__knows_where_I_live__sclera_supported-employment-where-b18e0dc4.png"
           }
         ]
+      },
+      "optionB": {
+        "sequence": [
+          "student",
+          "fear",
+          "where do you live",
+          "home school father"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_099__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "fear",
+            "filename": "ex_099__01__scared__arasaac_fear-6deebe0a.png"
+          },
+          {
+            "label": "where do you live",
+            "filename": "ex_099__02__someone_knows_where_they_live__arasaac_where-do-you-live-a25eddd6.png"
+          },
+          {
+            "label": "home school father",
+            "filename": "ex_099__03__where_they_live__sclera_home-school-father-6c962218.png"
+          }
+        ]
       }
     },
     {
@@ -5141,6 +5518,47 @@ window.REVIEW_DATA = {
       "position": 10,
       "sentence": "A student reported an emergency and asked for immediate adult help.",
       "optionA": {
+        "sequence": [
+          "student",
+          "to report",
+          "hospital",
+          "ask for help",
+          "follow game rules 1",
+          "administration",
+          "get child"
+        ],
+        "symbols": [
+          {
+            "label": "student",
+            "filename": "ex_100__00__A_student__arasaac_student-5105e1a9.png"
+          },
+          {
+            "label": "to report",
+            "filename": "ex_100__01__reported__arasaac_to-report-be819723.png"
+          },
+          {
+            "label": "hospital",
+            "filename": "ex_100__02__an_emergency__arasaac_hospital-d4ee3821.png"
+          },
+          {
+            "label": "ask for help",
+            "filename": "ex_100__03__asked__sclera_ask-for-help-0bde6154.png"
+          },
+          {
+            "label": "follow game rules 1",
+            "filename": "ex_100__04__immediate__sclera_follow-game-rules-1-1d448cd0.png"
+          },
+          {
+            "label": "administration",
+            "filename": "ex_100__05__adult__arasaac_administration-1c6622c3.png"
+          },
+          {
+            "label": "get child",
+            "filename": "ex_100__06__help__sclera_get-child-4a3cf469.png"
+          }
+        ]
+      },
+      "optionB": {
         "sequence": [
           "help [HIGH-RISK]",
           "help [HIGH-RISK]",
@@ -5163,27 +5581,6 @@ window.REVIEW_DATA = {
           {
             "label": "now",
             "filename": "ex_100__now__arasaac_now-4e0f0aae.png"
-          }
-        ]
-      },
-      "optionB": {
-        "sequence": [
-          "emergency exit [HIGH-RISK]",
-          "date [HIGH-RISK]",
-          "adult [HIGH-RISK]"
-        ],
-        "symbols": [
-          {
-            "label": "emergency exit",
-            "filename": "ex_100__emergency__arasaac_emergency-exit-4f3d87ac.png"
-          },
-          {
-            "label": "date",
-            "filename": "ex_100__immediate__arasaac_date-0f370593.png"
-          },
-          {
-            "label": "adult",
-            "filename": "ex_100__adult_help__arasaac_adult-82a736ae.png"
           }
         ]
       }
