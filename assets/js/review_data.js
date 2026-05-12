@@ -30,7 +30,7 @@ window.REVIEW_DATA = {
           },
           {
             "label": "part",
-            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
+            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
           },
           {
             "label": "male",
@@ -78,7 +78,7 @@ window.REVIEW_DATA = {
           },
           {
             "label": "part",
-            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
+            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
           },
           {
             "label": "human",
@@ -142,7 +142,7 @@ window.REVIEW_DATA = {
           },
            {
             "label": "part",
-            "filename": "ex_001__part_of__arasaac_private-a905dc53.png"
+            "filename": "ex_002__is_part_of__arasaac_part-e4e20ab0.png"
           },
           {
             "label": "reproduction",
